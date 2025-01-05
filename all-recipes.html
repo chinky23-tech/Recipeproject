@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cooking Recipe Website</title>
+   <link rel="stylesheet" href="styles/main.css">
+   <link rel="stylesheet" href="styles/all-recipes.css">
+   <link rel="stylesheet" href="styles/footer.css">
+   
+  
+
+</head>
+<body>
+    <header class="navbar">
+        <div class="logo">
+            <a href="index.html">Recipe Hub</a>
+        </div>
+        <div class="hamburger" onclick="toggleMenu()">
+            <span></span>
+            <span></span>
+            <span></span>
+          </div>
+        <nav>
+            <ul class="nav-links">
+             
+                <li><a href="all-recipes.html">Recipes</a></li>
+                <li><a href="instantpot.html">Instant Pot</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="about.html">About us</a></li>
+            </ul>
+        </nav>
+
+    </header>
+ <!-- Recipe Categories 
+ <main>
+    <h1 id="browse-recipe">Browse Recipe Categories</h1>
+    <div class="browse">
+        <div class="browse-wrapper">
+            
+            <div class="browse-box">
+                <a href="breakfast.html">
+                   
+                        <img src="images/breakfast/Gobi-Paratha.jpg" alt="Breakfast">
+                    
+                    <p>Breakfast</p>
+                </a>
+            </div>
+           
+            <div class="browse-box">
+                <a href="lunch.html">
+                    
+                        <img src="images/lunch/idli sambar.jpg" alt="Lunch">
+                    
+                    <p>Lunch</p>
+                </a>
+            </div>
+           
+            <div class="browse-box">
+                <a href="dinner.html">
+                    
+                        <img src="images/dinner/butterchicken.jpg" alt="Dinner">
+                    
+                    <p>Dinner</p>
+                </a>
+            </div>
+            
+            <div class="browse-box">
+                <a href="desserts.html">
+                    
+                        <img src="images/desserts/Falooda.jpg" alt="Desserts">
+                   
+                    <p>Desserts</p>
+                </a>
+            </div>
+        </div>
+    </div>
+</main>
+-->
+<main class="recipe-categories-section">
+    <h1 class="recipe-categories-heading">Browse Recipe Categories</h1>
+    <div class="recipe-categories-container">
+        <div class="recipe-category">
+            <a href="breakfast.html">
+                <img src="images/breakfast/Gobi-Paratha.jpg" alt="Breakfast" class="recipe-category-image">
+                <p class="recipe-category-title">Breakfast</p>
+            </a>
+        </div>
+        <div class="recipe-category">
+            <a href="lunch.html">
+                <img src="images/lunch/idli sambar.jpg" alt="Lunch" class="recipe-category-image">
+                <p class="recipe-category-title">Lunch</p>
+            </a>
+        </div>
+        <div class="recipe-category">
+            <a href="dinner.html">
+                <img src="images/dinner/butterchicken.jpg" alt="Dinner" class="recipe-category-image">
+                <p class="recipe-category-title">Dinner</p>
+            </a>
+        </div>
+        <div class="recipe-category">
+            <a href="desserts.html">
+                <img src="images/desserts/Falooda.jpg" alt="Desserts" class="recipe-category-image">
+                <p class="recipe-category-title">Desserts</p>
+            </a>
+        </div>
+    </div>
+</main>
+
+<section id="pasta">
+    <h1 id="pasta-heading">
+        Our Simple And Tasty Pasta Recipes Save The Day
+    </h1>
+    <img src="images/pasta/pasta-variation.jpg" class="pastaimg">
+    <h1 id="pasta-recipes">Pasta Recipes</h1>
+    <div class="pasta-grid">
+        <!-- Card 1 -->
+        <div class="pasta-card">
+            <a href="pasta1.html">
+                <img src="images/pasta/Spaghetti-Carbonara.jpeg" alt="Spaghetti Carbonara">
+                <p>Spaghetti Carbonara</p>
+            </a>
+        </div>
+        <!-- Card 2 -->
+        <div class="pasta-card">
+            <a href="pasta2.html">
+                <img src="images/pasta/Pasta-Arrabbiata.jpeg" alt="Penne Arrabbiata">
+                <p>Penne Arrabbiata</p>
+            </a>
+        </div>
+        <!-- Card 3 -->
+        <div class="pasta-card">
+            <a href="pasta3.html">
+                <img src="images/pasta/lasagna.jpeg" alt="Lasagna">
+                <p>Lasagna</p>
+            </a>
+        </div>
+        <!-- Card 4 -->
+        <div class="pasta-card">
+            <a href="pasta4.html">
+                <img src="images/pasta/fettuccine-pasta.jpeg" alt="Fettuccine Alfredo">
+                <p>Fettuccine Alfredo</p>
+            </a>
+        </div>
+        <!-- Card 5 -->
+        <div class="pasta-card">
+            <a href="pasta5.html">
+                <img src="images/pasta/pesto-pasta.jpeg" alt="Pesto Pasta">
+                <p>Pesto Pasta</p>
+            </a>
+        </div>
+        <!-- Card 6 -->
+        <div class="pasta-card">
+            <a href="pasta6.html">
+                <img src="images/pasta/mac-cheese.jpeg" alt="Macaroni and Cheese">
+                <p>Macaroni and Cheese</p>
+            </a>
+        </div>
+    </div>
+</section>
+
+<!-- Footer -->
+<footer>
+    <div class="footer-container">
+      <div class="footer-links">
+        <a href="#home">Home</a>
+        <a href="#breakfast">Breakfast</a>
+        <a href="#lunch">Lunch</a>
+        <a href="#dinner">Dinner</a>
+        <a href="#desserts">Desserts</a>
+        <a href="#contact">Contact Us</a>
+      </div>
+  
+      <div class="newsletter">
+        <p>Subscribe to our newsletter for the latest recipes!</p>
+        <form onsubmit="showThankYou(event)">
+          <input type="email" placeholder="Enter your email" required>
+          <button type="submit">Subscribe</button>
+        </form>
+        <p id="thank-you-message" style="display: none; color: green;">Thank you for subscribing!</p>
+      </div>
+  
+      <p>&copy; 2024 Your Recipe Website. All Rights Reserved.</p>
+      <button class="back-to-top" onclick="scrollToTop()">Back to Top</button>
+    </div>
+  </footer>
+  
+<script src="scripts/main.js"></script>
+<script src="scripts/bfrecipe1.js"></script>
+<script src="scripts/footer.js"></script>
+
+</body>
+</html>

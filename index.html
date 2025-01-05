@@ -1,0 +1,442 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cooking Recipe Website</title>
+   <link rel="stylesheet" href="styles/main.css">
+   <link rel="stylesheet" href="styles/hero.css">
+   <link rel="stylesheet" href="styles/search.css">
+   <link rel="stylesheet" href="styles/filter.css">
+   <link rel="stylesheet" href="styles/browse.css">
+   <link rel="stylesheet" href="styles/recipesection.css">
+   <link rel="stylesheet" href="styles/footer.css">
+
+
+</head>
+<body>
+    <header class="navbar">
+        <div class="logo">
+            <a href="index.html">Recipe Hub</a>
+        </div>
+        <div class="hamburger" onclick="toggleMenu()">
+            <span></span>
+            <span></span>
+            <span></span>
+          </div>
+        <nav>
+            <ul class="nav-links">
+             
+                <li><a href="all-recipes.html">Recipes</a></li>
+                <li><a href="InstantPot.html">Instant Pot</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="about.html">About us</a></li>
+            </ul>
+        </nav>
+
+    </header>
+
+    <section class="hero-section">
+    
+        <div class="hero-text">
+            <h1 class="hero-title">Delicious Recipes for Every Mood</h1>
+            <p class="hero-subtitle">Discover, cook, and enjoy your favorite meals  with ease.</p>
+            <a href="all-recipes.html" class="hero-btn">Explore Recipes</a>
+        </div>
+    
+        
+    </section>
+   
+
+     <!-- Search Section -->
+     <section id="search">
+        <input type="text" id="search-input" placeholder="Search recipes by name or ingredient">
+      
+    </section>
+
+    <!-- Filter Section -->
+    <section id="filter">
+        <select id="category-filter">
+            <option value="all">All Categories</option>
+            <option value="breakfast">Breakfast</option>
+            <option value="lunch">Lunch</option>
+            <option value="Dinner">Dinner</option>
+            <option value="dessert">Dessert</option>
+        </select>
+    </section>
+    
+ 
+    <!-- Recipes Section -->
+    <section id="Breakfast-Recipes">
+        <h3>Breakfast</h3>
+        <div class="recipe-container">
+            <button id="breakfastLeftBtn" class="scroll-btn left-btn">&#9665;</button>
+        <div class="recipe-wrapper">
+        <div class="recipe-cards">
+        <div class="recipe-card">
+            <a href="bfrecipe1.html">
+            <img src="images/breakfast/Gobi-Paratha.jpg" alt="Gobi Parantha">
+            <h4>Gobi Parantha</h4>
+
+            <p>Bite into Goodness </p>
+            </a>
+        </div>
+        <div class="recipe-card">
+            <a href="bfrecipe2.html">
+            <img src="images/breakfast/poha.jpg" alt="poha">
+            <h4>Poha</h4>
+            <p>Savory Delight </p>
+            </a>
+        </div>
+        <div class="recipe-card">
+            <a href="bfrecipe3.html">
+            <img src="images/breakfast/sandwich.jpg" alt="sandwich">
+            <h4>Sandwich </h4>
+            <p>Enjoy the Taste in a Single Bite</p>
+            </a>
+        </div>
+        <div class="recipe-card" >
+            <a href="bfrecipe4.html">
+            <img src="images/breakfast/paneer-paratha.jpg" alt="paneer parantha">
+            <h4>Paneer Parantha</h4>
+            <p>Paratha Packed with Indian Flavors</p>
+            </a>
+        </div>
+        <div class="recipe-card">
+            <a href="bfrecipe5.html">
+            <img src="images/breakfast/Besan-Chilla.jpg" alt="Besan chilla">
+            <h4>Besan Chilla</h4>
+            <p> A Healthy Option Packed with Protein</p>
+            </a>
+        </div>
+        <div class="recipe-card">
+            <a href="bfrecipe6.html">
+            <img src="images/breakfast/Moong-Dal-Chila.jpeg" alt="Moong dal chilla">
+            <h4>Moong dal chilla</h4>
+<p>Light and Healthy Meal</p>
+</a>
+        </div>
+        <div class="recipe-card">
+            <a href="bfrecipe7.html">
+            <img src="images/breakfast/oats-chilla.jpg" alt="Oats chilla">
+            <h4>Oats Chilla</h4>
+<p>Soft and Flavorful oats chilla </p>
+</a>
+        </div>
+        <div class="recipe-card">
+            <a href="bfrecipe8.html">
+            <img src="images/breakfast/Aloo-Paratha.jpg" alt="Allu parantha">
+            <h4>Allu Parantha</h4>
+            <p>Crispy Paratha Filled with Potatoes</p>
+            </a>
+        </div>
+        <div class="recipe-card">
+            <a href="bfrecipe9.html">
+            <img src="images/breakfast/Spinach-Omelette.jpg" alt="Spinach omelette">
+            <h4>Spinach Omelette</h4>
+            <p>Healthy and Flavorful Spinach Omelette</p>
+            </a>
+        </div>
+        <div class="recipe-card" >
+            <a href="bfrecipe10.html">
+            <img src="images/breakfast/french toast.jpg" alt="french Toast">
+            <h4>French Toast</h4>
+<p>Delicious and Soft French Toast</p>
+</a>
+        </div>
+</div>
+</div>
+
+        <button id="BreakfastRightBtn" class="scroll-btn right-btn">&#9655;</button>
+        </div>
+    </section>
+    <section id="Lunch-Recipes">
+        <h3>Lunch</h3>
+            <div class="recipe-container">
+                <button id="LunchLeftBtn" class="scroll-btn left-btn">&#9665;</button>
+            <div class="recipe-wrapper">
+            <div class="recipe-cards">
+            <div class="recipe-card" >
+                <a href="lunchrecipe1.html">
+                <img src="images/lunch/Rajmah.jpg" alt="rajmah">
+                <h4>Rajmah</h4>
+                <p>The king of beans</p>
+                </a>
+            </div>
+            <div class="recipe-card">
+                <a href="lunchrecipe2.html">
+                <img src="images/lunch/veg-pulao.jpg" alt="veg-pulao">
+                <h4>Mix Veg Pulao</h4>
+                <p>A colorful and flavorful delight</p>
+                </a>
+            </div>
+            <div class="recipe-card">
+                <a href="lunchrecipe3.html">
+                <img src="images/lunch/white channe.jpg" alt="channe puri">
+                <h4>kabuli channe puri</h4>
+                <p>Crispy puri and spicy channe</p>
+            </a>
+            </div>
+            <div class="recipe-card">
+                <a href="lunchrecipe4.html">
+                <img src="images/lunch/paneer-bhurji.jpg" alt="Paneer bhurji">
+                <h4>Paneer Bhurji</h4>
+                <p>Paneer lover's paradise</p>
+                </a>
+            </div>
+            <div class="recipe-card">
+                <a href="lunchrecipe5.html">
+                <img src="images/lunch/Palak-Chicken.jpg" alt="Palak-Chicken">
+                <h4>Palak-Chicken</h4>
+<p>Green and Delicious</p>
+</a>
+            </div>
+            <div class="recipe-card">
+                <a href="lunchrecipe6.html">
+                <img src="images/lunch/idli sambar.jpg" alt="idli sambar">
+                <h4>Idli Sambhar</h4>
+<p>A taste of south indian cuisine</p>
+</a>
+            </div>
+            <div class="recipe-card">
+                <a href="lunchrecipe7.html">
+                <img src="images/lunch/dal-tadka.jpg" alt="dal-tadka">
+                <h4>Dal Tadka</h4>
+<p>The classic comfort food</p>
+</a>
+            </div>
+            <div class="recipe-card">
+                <a href="lunchrecipe8.html">
+                <img src="images/lunch/chicken curry.jpg" alt="chicken curry">
+                <h4>chicken curry</h4>
+                <p>chicken curry that will steal your heart</p>
+                </a>
+            </div>
+            <div class="recipe-card">
+                <a href="lunchrecipe9.html">
+                <img src="images/lunch/chicken-biryani.jpg" alt="biryani">
+                <h4>chicken biryani</h4>
+                <p>A burst of flavor for chicken lovers</p>
+                </a>
+            </div>
+            <div class="recipe-card">
+                <a href="lunchrecipe10.html">
+                <img src="images/lunch/Afgani paneer.jpg" alt="Afgani paneer">
+                <h4>Afgani Paneer</h4>
+                <p>A new twist on paneer</p>
+                </a>
+            </div>
+        </div>
+    </div>
+    
+            <button id="LunchRightBtn" class="scroll-btn right-btn">&#9655;</button>
+            </div>
+    </section>
+    <section id="Dinner-Recipes">
+        <h3>Dinner</h3>
+        <div class="recipe-container">
+            <button id="DinnerLeftBtn" class="scroll-btn left-btn">&#9665;</button>
+            <div class="recipe-wrapper">
+                <div class="recipe-cards">
+                    <!-- Recipe Cards for Dinner -->
+                    <div class="recipe-card">
+                        <a href="dinnerrecipe1.html">
+                        <img src="images/dinner/kadhi-pakora.jpg" alt="Dinner 1">
+                        <h4>Kadhi Pakora</h4>
+                        <p>A match made in flavor heaven</p>
+                        </a>
+                    </div>
+                    <div class="recipe-card">
+                        <a href="dinnerrecipe2.html">
+                        <img src="images/dinner/butterchicken.jpg" alt="Dinner 2">
+                        <h4>Butter chicken</h4>
+<p>Buttery and oh so yummy!
+</p>
+</a>
+                    </div>
+                    <div class="recipe-card">
+                        <a href="dinnerrecipe3.html">
+                        <img src="images/dinner/chana-masala.jpg" alt="Dinner 3">
+                        <h4>Chana masala</h4>
+                        <p>Spicy channe in a tomato gravy</p>
+                        </a>
+                    </div>
+                    <div class="recipe-card">
+                        <a href="dinnerrecipe4.html">
+                        <img src="images/dinner/chilli chicken.jpg" alt="Dinner 4">
+                        <h4>chilli chicken</h4>
+                       <p>Sizzling chicken in a fiery chili sauce</p>
+                        </a>
+                    </div>
+                    <div class="recipe-card">
+                        <a href="dinnerrecipe5.html">
+                        <img src="images/dinner/dal makhni.jpg" alt="Dinner 5">
+                        <h4>Dal Makhni</h4>
+<p>The ultimate comfort food</p>
+</a>
+                    </div>
+                    <div class="recipe-card">
+                        <a href="dinnerrecipe6.html">
+                        <img src="images/dinner/Chilli-Paneer.jpg" alt="Dinner 6">
+                        <h4>Chilli Paneer</h4>
+                        <p>Spicy paneer tossed in  sauce</p>
+                        </a>
+                    </div>
+                    <div class="recipe-card">
+                        <a href="dinnerrecipe7.html">
+                        <img src="images/dinner/Egg-Curry.jpg" alt="Dinner 7">
+                        <h4>Egg Curry</h4>
+<p>Quick & Easy comforting curry </p>
+</a>
+                    </div>
+                    <div class="recipe-card">
+                        <a href="dinnerrecipe8.html">
+                        <img src="images/dinner/kadhai chicken.jpg" alt="Dinner 8">
+                        <h4>kadhai chicken</h4>
+                        <p>Fire up your taste buds</p>
+                        </a>
+                    </div>
+                
+                <div class="recipe-card">
+                    <a href="dinnerrecipe9.html">
+                    <img src="images/dinner/mix-veg.jpg" alt="Dinner 9">
+                    <h4>Mix Veg</h4>
+                    <p>A colorful and flavorful delight</p>
+                    </a>
+                </div>
+                <div class="recipe-card">
+                    <a href="dinnerrecipe10.html">
+                    <img src="images/dinner/mushroom masala .JPG" alt="Dinner 10">
+                    <h4>Mushroom masala </h4>
+<p> Mushrooms cooked in a spicy masala</p>
+</a>
+                </div>
+            </div>
+            </div>
+            <button id="DinnerRightBtn" class="scroll-btn right-btn">&#9655;</button>
+        </div>
+    </section>
+    
+    <section id="Desserts-Recipes">
+        <h3>Desserts</h3>
+        <div class="recipe-container">
+            <button id="DessertLeftBtn" class ="scroll-btn left-btn">&#9665;</button>
+            <div class="recipe-wrapper">
+                <div class="recipe-cards">
+                    <!-- Recipe Cards for Desserts -->
+                    <div class="recipe-card">
+                        <a href="dessertrecipe1.html">
+                        <img src="images/desserts/besan laddo.jpg" alt="Dessert 1">
+                        <h4>Besan Laddo</h4>
+<p>Delicious and nutritious ladoos</p>
+</a>
+                    </div>
+                    <div class="recipe-card">
+                        <a href="dessertrecipe2.html">
+                        <img src="images/desserts/Falooda.jpg" alt="Dessert 2">
+                        <h4>Falooda</h4>
+                        <p>Cool down with this refreshing treat</p>
+                        </a>
+                    </div>
+                    <div class="recipe-card">
+                        <a href="dessertrecipe3.html">
+                        <img src="images/desserts/gajar ka halwa.jpg" alt="Dessert 3">
+                        <h4>Gajar ka Halwa</h4>
+<p>The sweet taste of carrots</p>
+</a>
+                    </div>
+                    <div class="recipe-card">
+                        <a href="dessertrecipe4.html">
+                        <img src="images/desserts/gulabjamun.jpg" alt="Dessert 4">
+                        <h4>GulabJamun</h4>
+<p>Sweetness redefined</p>
+</a>
+                    </div>
+                    <div class="recipe-card">
+                        <a href="dessertrecipe5.html">
+                        <img src="images/desserts/jalebi.jpg" alt="Dessert 5">
+                        <h4>Jalebi</h4>
+<p>Crispy and sweet jalebis</p>
+</a>
+                    </div>
+                    <div class="recipe-card">
+                        <a href="dessertrecipe6.html">
+                        <img src="images/desserts/kheer.jpg" alt="Dessert 6">
+                        <h4>Kheer</h4>
+<p>For the sweet tooth </p>
+</a>
+                    </div>
+                    <div class="recipe-card">
+                        <a href="dessertrecipe7.html">
+                        <img src="images/desserts/kulfi.jpg" alt="Dessert 7">
+                        <h4>Kulfi</h4>
+<p>The taste of Indian ice cream</p>
+</a>
+                    </div>
+                    <div class="recipe-card">
+                        <a href="dessertrecipe8.html">
+                        <img src="images/desserts/Malpua.jpg" alt="Dessert 8">
+                        <h4>Malpua</h4>
+                        <p>A delicious fried delicacy</p>
+                        </a>
+                    </div>
+                    <div class="recipe-card">
+                        <a href="dessertrecipe9.html">
+                        <img src="images/desserts/Mango lassi.jpg" alt="Dessert 2">
+                        <h4>Mango Lassi</h4>
+                       <p>The magic of mango</p>
+                       </a>
+                    </div>
+                    <div class="recipe-card">
+                        <a href="dessertrecipe10.html">
+                        <img src="images/desserts/rasmalai.jpg" alt="Dessert 2">
+                        <h4>Rasmalai</h4>
+<p>Silky smooth and delicious</p>
+</a>
+                    </div>
+                </div>
+            </div>
+            <button id = "DessertRightBtn" class="scroll-btn right-btn">&#9655;</button>
+        </div>
+    </section>
+    
+        <!-- Favorites Section 
+        <section id="favorites">
+            <h3>Your Favorites</h3>
+            <div id="favorites-container"></div>
+        </section>
+    -->
+    <footer>
+        <div class="footer-container">
+          <div class="footer-links">
+            <a href="index.html">Home</a>
+            <a href="breakfast.html">Breakfast</a>
+            <a href="#lunch">Lunch</a>
+            <a href="#dinner">Dinner</a>
+            <a href="#desserts">Desserts</a>
+            <a href="contact.html">Contact Us</a>
+          </div>
+      
+          <div class="newsletter">
+            <p>Subscribe to our newsletter for the latest recipes!</p>
+            <form onsubmit="showThankYou(event)">
+              <input type="email" placeholder="Enter your email" required>
+              <button type="submit">Subscribe</button>
+            </form>
+            <p id="thank-you-message" style="display: none; color: green;">Thank you for subscribing!</p>
+          </div>
+      
+          <p>&copy; 2024 Your Recipe Website. All Rights Reserved.</p>
+          <button class="back-to-top" onclick="scrollToTop()">Back to Top</button>
+        </div>
+      </footer>
+      
+<script src="scripts/main.js"></script>
+<script src="scripts/hero.js"></script>
+<script src="scripts/search.js"></script>
+<script src="scripts/filter.js"></script>
+<script src="scripts/recipesection.js"></script>
+<script src="scripts/footer.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cooking Recipe Website</title>
+   <link rel="stylesheet" href="styles/main.css">
+ <link rel="stylesheet" href="styles/bfrecipe6.css">
+   <link rel="stylesheet" href="styles/footer.css">
+
+
+</head>
+<body>
+    <header class="navbar">
+        <div class="logo">
+            <a href="index.html">Recipe Hub</a>
+        </div>
+        <div class="hamburger" onclick="toggleMenu()">
+            <span></span>
+            <span></span>
+            <span></span>
+          </div>
+        <nav>
+            <ul class="nav-links">
+             
+                <li><a href="all-recipes.html">Recipes</a></li>
+                <li><a href="InstantPot.html">Instant Pot</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="about.html">About us</a></li>
+            </ul>
+        </nav>
+
+    </header>
+    <section id="hero2">
+        <div class="hero2-recipe">
+            <img src="images/breakfast/Moong-Dal-Chila.jpeg" alt="sandwich" class="recipe2">
+        
+        <div class="hero2-text">
+            <h1>Fuel your day with this light and crispy Moong Dal Chilla</h1>
+        </div>
+        </div>
+    </section>
+
+        <!-- Recipe Details -->
+        <section class="recipe-details">
+            <div class="info">
+                <p><strong>Cuisine:</strong>  Indian Food</p>
+                <p><strong>Prep Time:</strong>  10mins</p>
+                <p><strong>Cook Time:</strong>  15 mins</p>
+              <!-- <p><strong>Soaking Time:</strong> 3 hrs</p>-->
+                <p><strong>Total Time:</strong>  25 mins</p>
+                <p id="text">Moong Dal Chilla is the perfect healthy and flavorful breakfast
+                </p>
+            </div>
+            
+        </section>
+    
+      
+    <section class="button-section">
+        <button id="reviewBtn">Review</button>
+        <button id="printBtn">Print</button>
+        <button id="saveBtn">Save</button>
+    </section>
+    
+<!-- Modal Popup for Review -->
+<div id="reviewModal" class="modal" style="display: none;">
+    <div class="modal-content">
+        <textarea id="reviewText" placeholder="Write your review..."></textarea>
+        <button id="submitReview">Submit</button>
+        <button id="closeModal">Close</button>
+    </div>
+</div>
+
+
+    <!-- Ingredients and Method -->
+    <section class="ingredients-method">
+        <div class="ingredients">
+            <h2>Ingredients</h2>
+            <ul>
+                <li><label class="custom-checkbox"><input type="checkbox"><span class="checkmark"></span>
+                     
+                    1 cup moong dal
+                    </label>
+                </li>
+    
+                
+                <li>
+                    <label class="custom-checkbox">
+                        <input type="checkbox"> <span class="checkmark"></span> 1 chilli</label>
+                    </li>
+                <li>
+                    <label class="custom-checkbox">
+                        <input type="checkbox">
+                         <span class="checkmark"></span>
+                         
+1 inch ginger
+                        </label>
+                    </li>
+                <li>
+                    <label class="custom-checkbox">
+                        <input type="checkbox"> 
+                        <span class="checkmark"></span> 
+                         2-3  garlic clove
+                       
+
+                    </label>
+                </li>
+                <li><label class="custom-checkbox"><input type="checkbox"> <span class="checkmark"></span> 1 tsp cumin / jeera
+
+                </label></li>
+                <li><label class="custom-checkbox"><input type="checkbox"> <span class="checkmark"></span>2 tbsp coriander</label></li>
+                <li><label class="custom-checkbox"><input type="checkbox"> <span class="checkmark"></span> pinch hing / asafoetida
+
+                </label></li>
+                <li><label class="custom-checkbox"><input type="checkbox"> <span class="checkmark"></span>1 onion finely chopped</label></li>
+                <li><label class="custom-checkbox"><input type="checkbox"> <span class="checkmark"></span>½ tsp salt </label></li>
+                <li><label class="custom-checkbox"><input type="checkbox"> <span class="checkmark"></span>3 tbsp water
+
+                </label></li>
+                <li><label class="custom-checkbox"><input type="checkbox"> <span class="checkmark"></span> oil for roasting
+                </label></li>
+                <!--<li><label class="custom-checkbox"><input type="checkbox">  <span class="checkmark"></span> ½ lemon</label></li>-->
+
+            </ul>
+        </div>
+        <div class="method">
+            <h2>Method</h2>
+            <ol>
+                <li class="bg-black">Firstly, in a large bowl soak 1 cup moong dal for 3 hours.
+                </li>
+                <li class="bg-black">Drain off the water and transfer to the mixi jar.
+
+                </li>
+                <li class="bg-black">Also add 1 chilli, 1 inch ginger / garlic clove and 1 tsp cumin.
+                </li>
+                <li class="bg-black">Blend to smooth paste adding water if required.
+
+                </li>
+                <li class="bg-black">Transfer the batter to the bowl.
+
+                </li>
+                <li class="bg-black"> Also add ¼ tsp turmeric, 2 tbsp coriander, pinch hing and ½ tsp salt.
+
+
+                </li>
+                <li class="bg-black">Mix well adding 3 tbsp of water forming thick flowing consistency chilla batter.</li>
+              <!--  <li class="bg-black"> </li>-->
+                <li class="bg-black">
+                    Further, pour a ladleful of batter onto a hot tawa and spread gently.
+                </li>
+                <li class="bg-black">Pour ½ tsp of olive oil over chilla.
+
+                </li>
+                <li class="bg-black">Cover and allow cooking on a medium flame for a minute.
+
+                </li>
+                <li class="bg-black">Now flip the chilla and cook both sides pressing gently.
+                </li>
+                <li class="bg-black">Finally, moong dal chilla is ready to serve with green chutney.
+
+                </li>
+                
+            </ol>
+        </div>
+    </section>
+    <footer>
+        <div class="footer-container">
+          <div class="footer-links">
+            <a href="#home">Home</a>
+            <a href="#breakfast">Breakfast</a>
+            <a href="#lunch">Lunch</a>
+            <a href="#dinner">Dinner</a>
+            <a href="#desserts">Desserts</a>
+            <a href="#contact">Contact Us</a>
+          </div>
+      
+          <div class="newsletter">
+            <p>Subscribe to our newsletter for the latest recipes!</p>
+            <form onsubmit="showThankYou(event)">
+              <input type="email" placeholder="Enter your email" required>
+              <button type="submit">Subscribe</button>
+            </form>
+            <p id="thank-you-message" style="display: none; color: green;">Thank you for subscribing!</p>
+          </div>
+      
+          <p>&copy; 2024 Your Recipe Website. All Rights Reserved.</p>
+          <button class="back-to-top" onclick="scrollToTop()">Back to Top</button>
+        </div>
+      </footer>
+      
+<script src="scripts/main.js"></script>
+<script src="scripts/bfrecipe1.js"></script>
+<script src="scripts/footer.js"></script>
+
+</body>
+</html>

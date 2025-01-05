@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cooking Recipe Website</title>
+   <link rel="stylesheet" href="styles/main.css">
+ <link rel="stylesheet" href="styles/bfrecipe5.css">
+   <link rel="stylesheet" href="styles/footer.css">
+
+
+</head>
+<body>
+    <header class="navbar">
+        <div class="logo">
+            <a href="index.html">Recipe Hub</a>
+        </div>
+        <div class="hamburger" onclick="toggleMenu()">
+            <span></span>
+            <span></span>
+            <span></span>
+          </div>
+        <nav>
+            <ul class="nav-links">
+             
+                <li><a href="all-recipes.html">Recipes</a></li>
+                <li><a href="InstantPot.html">Instant Pot</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="about.html">About us</a></li>
+            </ul>
+        </nav>
+
+    </header>
+    <section id="hero2">
+        <div class="hero2-recipe">
+            <img src="images/breakfast/Besan-Chilla.jpg" alt="sandwich" class="recipe2">
+        
+        <div class="hero2-text">
+            <h1>The Perfect Blend of Taste and Nutrition – Besan Chilla</h1>
+        </div>
+        </div>
+    </section>
+
+        <!-- Recipe Details -->
+        <section class="recipe-details">
+            <div class="info">
+                <p><strong>Cuisine:</strong>  Indian Food</p>
+                <p><strong>Prep Time:</strong>  5 mins</p>
+                <p><strong>Cook Time:</strong>  30 mins</p>
+                <p><strong>Total Time:</strong>  35 mins</p>
+                <p id="text">Crispy, Healthy, and Full of Flavor – Besan Chilla!</p>
+            </div>
+            
+        </section>
+    
+      
+    <section class="button-section">
+        <button id="reviewBtn">Review</button>
+        <button id="printBtn">Print</button>
+        <button id="saveBtn">Save</button>
+    </section>
+    
+<!-- Modal Popup for Review -->
+<div id="reviewModal" class="modal" style="display: none;">
+    <div class="modal-content">
+        <textarea id="reviewText" placeholder="Write your review..."></textarea>
+        <button id="submitReview">Submit</button>
+        <button id="closeModal">Close</button>
+    </div>
+</div>
+
+
+    <!-- Ingredients and Method -->
+    <section class="ingredients-method">
+        <div class="ingredients">
+            <h2>Ingredients</h2>
+            <ul>
+                <li>
+                    <label class="custom-checkbox">
+                        <input type="checkbox">
+                        <span class="checkmark"></span>
+                      For Chilla Batter: 1½ cup besan / gram flour
+
+                    </label>
+                </li>
+    
+                
+                <li>
+                    <label class="custom-checkbox">
+                        <input type="checkbox"> <span class="checkmark"></span>¼ cup rava / suji</label>
+                    </li>
+                <li>
+                    <label class="custom-checkbox">
+                        <input type="checkbox">
+                         <span class="checkmark"></span>
+                         ¼ cup curd
+
+                        </label>
+                    </li>
+                <li>
+                    <label class="custom-checkbox">
+                        <input type="checkbox"> 
+                        <span class="checkmark"></span> 
+                        
+                        ¼ tsp turmeric
+
+                    </label>
+                </li>
+                <li><label class="custom-checkbox"><input type="checkbox"> <span class="checkmark"></span> ¾ tsp salt
+                </label></li>
+                <li><label class="custom-checkbox"><input type="checkbox"> <span class="checkmark"></span>1 cup water</label></li>
+                <li><label class="custom-checkbox"><input type="checkbox"> <span class="checkmark"></span> oil, for roasting
+                </label></li>
+                <li><label class="custom-checkbox"><input type="checkbox"> <span class="checkmark"></span>For Paneer Stuffing: 1 cup paneer, grated </label></li>
+                <li><label class="custom-checkbox"><input type="checkbox"> <span class="checkmark"></span> 1 carrot, chopped</label></li>
+                <li><label class="custom-checkbox"><input type="checkbox"> <span class="checkmark"></span> ½ capsicum, chopped/1 tomato, chopped
+                </label></li>
+                <li><label class="custom-checkbox"><input type="checkbox"> <span class="checkmark"></span> 2 tbsp coriander, chopped/½ tsp salt
+                </label></li>
+                <!--<li><label class="custom-checkbox"><input type="checkbox">  <span class="checkmark"></span> ½ lemon</label></li>-->
+
+            </ul>
+        </div>
+        <div class="method">
+            <h2>Method</h2>
+            <ol>
+                <li class="bg-black">firstly, in a mixer jar take 1½ cup besan, ¼ cup rava, ¼ cup curd, ¼ tsp turmeric and ¾ tsp salt.
+                </li>
+                <li class="bg-black">add 1 cup water and blend to smooth batter.
+                </li>
+                <li class="bg-black">pour the batter into a large bowl and rest for 10 minutes.
+                </li>
+                <li class="bg-black">meanwhile, to prepare the stuffing, in a bowl take 1 cup paneer, 1 carrot, ½ capsicum, 1 tomato, 3 tbsp sweet corn, and 2 tbsp coriander.
+                </li>
+                <li class="bg-black">add ½ tsp salt and mix well.
+                </li>
+                <li class="bg-black"> paneer stuffing is ready.
+
+                </li>
+                <li class="bg-black">to prepare the chilla, heat the dosa pan and pour the chilla batter.</li>
+                <li class="bg-black">spread as thin as possible.
+
+                </li>
+                <li class="bg-black">once the chilla is cooked from the top, spread 1 tsp oil.
+
+                </li>
+                <li class="bg-black">cover and roast on low flame until the chilla is cooked well.
+                </li>
+                <li class="bg-black">now spread prepared paneer stuffing uniformly and cook for some time.
+
+                </li>
+                <li class="bg-black">roll the chilla tight keeping the stuffing intact.
+                </li>
+                <li class="bg-black">finally, enjoy Besan Chilla Recipe with green chutney and tomato sauce.
+                </li>
+                
+            </ol>
+        </div>
+    </section>
+    <footer>
+        <div class="footer-container">
+          <div class="footer-links">
+            <a href="#home">Home</a>
+            <a href="#breakfast">Breakfast</a>
+            <a href="#lunch">Lunch</a>
+            <a href="#dinner">Dinner</a>
+            <a href="#desserts">Desserts</a>
+            <a href="#contact">Contact Us</a>
+          </div>
+      
+          <div class="newsletter">
+            <p>Subscribe to our newsletter for the latest recipes!</p>
+            <form onsubmit="showThankYou(event)">
+              <input type="email" placeholder="Enter your email" required>
+              <button type="submit">Subscribe</button>
+            </form>
+            <p id="thank-you-message" style="display: none; color: green;">Thank you for subscribing!</p>
+          </div>
+      
+          <p>&copy; 2024 Your Recipe Website. All Rights Reserved.</p>
+          <button class="back-to-top" onclick="scrollToTop()">Back to Top</button>
+        </div>
+      </footer>
+      
+<script src="scripts/main.js"></script>
+<script src="scripts/bfrecipe1.js"></script>
+<script src="scripts/footer.js"></script>
+
+</body>
+</html>

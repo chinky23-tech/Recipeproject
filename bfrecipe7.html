@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cooking Recipe Website</title>
+   <link rel="stylesheet" href="styles/main.css">
+ <link rel="stylesheet" href="styles/bfrecipe7.css">
+   <link rel="stylesheet" href="styles/footer.css">
+
+
+</head>
+<body>
+    <header class="navbar">
+        <div class="logo">
+            <a href="index.html">Recipe Hub</a>
+        </div>
+        <div class="hamburger" onclick="toggleMenu()">
+            <span></span>
+            <span></span>
+            <span></span>
+          </div>
+        <nav>
+            <ul class="nav-links">
+             
+                <li><a href="all-recipes.html">Recipes</a></li>
+                <li><a href="InstantPot.html">Instant Pot</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="about.html">About us</a></li>
+            </ul>
+        </nav>
+
+    </header>
+    <section id="hero2">
+        <div class="hero2-recipe">
+            <img src="images/breakfast/oats-chilla.jpg" alt="sandwich" class="recipe2">
+        
+        <div class="hero2-text">
+            <h1>Quick & Easy  Oats Chilla is perfect for busy mornings</h1>
+        </div>
+        </div>
+    </section>
+
+        <!-- Recipe Details -->
+        <section class="recipe-details">
+            <div class="info">
+                <p><strong>Cuisine:</strong>  Indian Food</p>
+                <p><strong>Prep Time:</strong>  5 mins</p>
+                <p><strong>Cook Time:</strong>  15 mins</p>
+              <!-- <p><strong>Soaking Time:</strong> 3 hrs</p>-->
+                <p><strong>Total Time:</strong>  20 mins</p>
+                <p id="text">Packed with fiber and flavor - Nutritious Oats Chilla
+                </p>
+            </div>
+            
+        </section>
+    
+      
+    <section class="button-section">
+        <button id="reviewBtn">Review</button>
+        <button id="printBtn">Print</button>
+        <button id="saveBtn">Save</button>
+    </section>
+    
+<!-- Modal Popup for Review -->
+<div id="reviewModal" class="modal" style="display: none;">
+    <div class="modal-content">
+        <textarea id="reviewText" placeholder="Write your review..."></textarea>
+        <button id="submitReview">Submit</button>
+        <button id="closeModal">Close</button>
+    </div>
+</div>
+
+
+    <!-- Ingredients and Method -->
+    <section class="ingredients-method">
+        <div class="ingredients">
+            <h2>Ingredients</h2>
+            <ul>
+                <li><label class="custom-checkbox"><input type="checkbox"><span class="checkmark"></span>
+                    1 cup rolled oats
+
+                    
+                    </label>
+                </li>
+    
+                
+                <li>
+                    <label class="custom-checkbox">
+                        <input type="checkbox"> <span class="checkmark"></span>2 tbsp rava / semolina / suji, fine
+                    </label>
+                    </li>
+                <li>
+                    <label class="custom-checkbox">
+                        <input type="checkbox">
+                         <span class="checkmark"></span>
+                         ¼ cup curd / yogurt
+
+
+                        </label>
+                    </li>
+                <li>
+                    <label class="custom-checkbox">
+                        <input type="checkbox"> 
+                        <span class="checkmark"></span> 
+                        
+                        1 cup water
+
+                    </label>
+                </li>
+                <li><label class="custom-checkbox"><input type="checkbox"> <span class="checkmark"></span> ¼ tsp turmeric
+
+
+                </label></li>
+                <li><label class="custom-checkbox"><input type="checkbox"> <span class="checkmark"></span>½ tsp ginger paste
+                </label></li>
+                <li><label class="custom-checkbox"><input type="checkbox"> <span class="checkmark"></span> 2 chilli, finely chopped
+
+
+                </label></li>
+                <li><label class="custom-checkbox"><input type="checkbox"> <span class="checkmark"></span>½ tsp cumin / jeera, crushed
+                </label></li>
+                <li><label class="custom-checkbox"><input type="checkbox"> <span class="checkmark"></span> 2 tbsp onion, finely chopped
+                </label></li>
+                <li><label class="custom-checkbox"><input type="checkbox"> <span class="checkmark"></span>2 tbsp tomato, finely chopped
+
+                </label></li>
+                <li><label class="custom-checkbox"><input type="checkbox"> <span class="checkmark"></span> ½ tsp salt
+
+                </label></li>
+                <li><label class="custom-checkbox"><input type="checkbox">  <span class="checkmark"></span> olive oil, for roasting</label></li>
+
+            </ul>
+        </div>
+        <div class="method">
+            <h2>Method</h2>
+            <ol>
+                <li class="bg-black">Firstly dry roast 1 cup rolled oats. take unflavoured oats as we are adding spices.
+                </li>
+                
+                <li class="bg-black">
+                    roast until the oats turn crisp.
+                </li>
+                <li class="bg-black">cool the oats completely and blend to a fine powder without adding any water.
+
+                </li>
+                <li class="bg-black">
+                    transfer the powdered oats into a large mixing bowl.
+
+                </li>
+                <li class="bg-black">
+                    also, add 2 tbsp rava for binding.
+
+                </li>
+                <li class="bg-black"> 
+                    now add ¼ cup curd and 1 cup water.whisk and mix make smooth lump free batter.
+
+                </li>
+                <li class="bg-black">additionally, add ¼ tsp turmeric, ½ tsp ginger paste, 2 chilli, ½ tsp crushed cumin.
+                </li>
+               <li class="bg-black">also add 2 tbsp onion, 2 tbsp tomato and ½ tsp salt.mix well forming thick flowing consistency chilla batter.
+
+            </li>
+                <li class="bg-black">
+                    further, pour a ladleful of batter onto a hot tawa and spread gently.pour ½ tsp of olive oil over chilla.
+
+
+                </li>
+                <li class="bg-black">
+                    cover and allow cooking on a medium flame for a minute.
+
+                </li>
+                <li class="bg-black">
+                    now flip the chilla and cook both sides pressing gently.
+
+                </li>
+                <li class="bg-black">finally, oats chilla is ready to serve with green chutney.
+                </li>
+              <!-- <li class="bg-black">
+
+                </li>-->
+                
+            </ol>
+        </div>
+    </section>
+    <footer>
+        <div class="footer-container">
+          <div class="footer-links">
+            <a href="#home">Home</a>
+            <a href="#breakfast">Breakfast</a>
+            <a href="#lunch">Lunch</a>
+            <a href="#dinner">Dinner</a>
+            <a href="#desserts">Desserts</a>
+            <a href="#contact">Contact Us</a>
+          </div>
+      
+          <div class="newsletter">
+            <p>Subscribe to our newsletter for the latest recipes!</p>
+            <form onsubmit="showThankYou(event)">
+              <input type="email" placeholder="Enter your email" required>
+              <button type="submit">Subscribe</button>
+            </form>
+            <p id="thank-you-message" style="display: none; color: green;">Thank you for subscribing!</p>
+          </div>
+      
+          <p>&copy; 2024 Your Recipe Website. All Rights Reserved.</p>
+          <button class="back-to-top" onclick="scrollToTop()">Back to Top</button>
+        </div>
+      </footer>
+      
+<script src="scripts/main.js"></script>
+<script src="scripts/bfrecipe1.js"></script>
+<script src="scripts/footer.js"></script>
+
+</body>
+</html>

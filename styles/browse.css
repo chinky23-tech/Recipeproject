@@ -1,0 +1,112 @@
+/* Recipe Categories Section */
+.browse-categories {
+    display: flex;
+    flex-direction: column; /* Stack heading and content vertically */
+    justify-content: center;
+    align-items: center;
+    padding: 30px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto; /* Center the section */
+}
+
+/* Heading Style */
+.browse-categories h1 {
+    font-size: 24px;
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 20px; /* Add spacing between the heading and the wrapper */
+    text-align: center;
+    
+}
+
+/* Recipe Wrapper */
+.browse-wrapper{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10; /* Space between the recipe boxes */
+    flex-wrap: wrap; /* Allow wrapping for smaller screens */
+    margin-top: 20px;
+    width: 100%;
+}
+
+/* Recipe Box */
+.browse-box {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    margin-bottom: 10px;
+    max-width: 200px; /* Prevents box from becoming too wide */
+    width: 100%;
+}
+
+/* Circular Images */
+.browse-box img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    object-fit: cover;
+    transition: transform 0.3s ease;
+}
+
+/* Hover Effect */
+.browse-box img:hover {
+    transform: scale(1.1);
+}
+
+/* Text Below the Image */
+.browse-box p {
+    margin-top: 10px;
+    font-size: 16px;
+    font-weight: bold;
+    color: #333;
+    
+}
+.browse-box a{
+    text-decoration: none;
+    color: inherit; /* Inherits the text color */
+}
+/* Responsive Design */
+@media (max-width: 768px) {
+    .browse-categories h1 {
+        font-size: 2rem;
+    }
+
+    .browse-box {
+        width: 180px;
+    }
+
+    .browse-box img {
+        height: 120px;
+        width: 120px;
+    }
+}
+
+@media (max-width: 480px) {
+    .browse-categories h1 {
+        font-size: 1.8rem;
+    }
+
+    .browse-box {
+        width: 150px;
+    }
+
+    .browse-box img {
+        height: 120px;
+        width: 120px;
+    }
+
+    .browse-box p {
+        font-size: 1rem;
+    }
+    
+    /* Remove the min-height for better mobile view */
+    .browse-categories {
+        padding-bottom: 20px;
+    }
+}

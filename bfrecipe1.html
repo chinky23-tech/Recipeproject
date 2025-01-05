@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cooking Recipe Website</title>
+   <link rel="stylesheet" href="styles/main.css">
+ <link rel="stylesheet" href="styles/bfrecipe1.css">
+   <link rel="stylesheet" href="styles/footer.css">
+
+
+</head>
+<body>
+    <header class="navbar">
+        <div class="logo">
+            <a href="index.html">Recipe Hub</a>
+        </div>
+        <div class="hamburger" onclick="toggleMenu()">
+            <span></span>
+            <span></span>
+            <span></span>
+          </div>
+        <nav>
+            <ul class="nav-links">
+             
+                <li><a href="all-recipes.html">Recipes</a></li>
+                <li><a href="InstantPot.html">Instant Pot</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="about.html">About us</a></li>
+            </ul>
+        </nav>
+
+    </header>
+    <section id="hero2">
+        <div class="hero2-recipe">
+            <img src="images/breakfast/Gobi-Paratha.jpg" alt="sandwich" class="recipe2">
+        
+        <div class="hero2-text">
+            <h1>Crispy outside,savory inside—Gobi Parantha , a bite of flavor</h1>
+        </div>
+        </div>
+    </section>
+
+        <!-- Recipe Details -->
+        <section class="recipe-details">
+            <div class="info">
+                <p><strong>Cuisine:</strong> North India</p>
+                <p><strong>Prep Time:</strong>  20 mins</p>
+                <p><strong>Cook Time:</strong>  25 mins</p>
+                <p><strong>Total Time:</strong>  45 mins</p>
+                <p id="text">Flavors Folded to Perfection – Gobi Paratha Delight.</p>
+            </div>
+            
+        </section>
+    
+      
+    <section class="button-section">
+        <button id="reviewBtn">Review</button>
+        <button id="printBtn">Print</button>
+        <button id="saveBtn">Save</button>
+    </section>
+    
+<!-- Modal Popup for Review -->
+<div id="reviewModal" class="modal" style="display: none;">
+    <div class="modal-content">
+        <textarea id="reviewText" placeholder="Write your review..."></textarea>
+        <button id="submitReview">Submit</button>
+        <button id="closeModal">Close</button>
+    </div>
+</div>
+
+
+    <!-- Ingredients and Method -->
+    <section class="ingredients-method">
+        <div class="ingredients">
+            <h2>Ingredients</h2>
+            <ul>
+                <li>
+                    <label class="custom-checkbox">
+                        <input type="checkbox">
+                        <span class="checkmark"></span>
+                        ½ gobi / cauliflower / gobi, grated
+
+                    </label>
+                </li>
+    
+                
+                <li>
+                    <label class="custom-checkbox">
+                        <input type="checkbox"> <span class="checkmark"></span> ½ tsp garam masala</label>
+                    </li>
+                <li>
+                    <label class="custom-checkbox">
+                        <input type="checkbox">
+                         <span class="checkmark"></span>
+                         ½ tsp cumin powder
+
+                        </label>
+                    </li>
+                <li>
+                    <label class="custom-checkbox">
+                        <input type="checkbox"> 
+                        <span class="checkmark"></span> 
+                        
+                        ½ tsp coriander powder
+                    </label>
+                </li>
+                <li><label class="custom-checkbox"><input type="checkbox"> <span class="checkmark"></span> ½ tsp aamchur,½ tsp ajwain
+
+                </label></li>
+                <li><label class="custom-checkbox"><input type="checkbox"> <span class="checkmark"></span>½ tsp salt</label></li>
+                <li><label class="custom-checkbox"><input type="checkbox"> <span class="checkmark"></span> 1 inch ginger, grated</label></li>
+                <li><label class="custom-checkbox"><input type="checkbox"> <span class="checkmark"></span>2 chilli, finely chopped</label></li>
+                <li><label class="custom-checkbox"><input type="checkbox"> <span class="checkmark"></span> 2 tbsp coriander, finely chopped</label></li>
+                <li><label class="custom-checkbox"><input type="checkbox"> <span class="checkmark"></span> !for dough: 2 cup wheat flour
+
+                </label></li>
+                <li><label class="custom-checkbox"><input type="checkbox"> <span class="checkmark"></span> water, for kneading</label></li>
+                <li><label class="custom-checkbox"><input type="checkbox">  <span class="checkmark"></span> oil, for toasting</label></li>
+
+            </ul>
+        </div>
+        <div class="method">
+            <h2>Method</h2>
+            <ol>
+                <li class="bg-black">Firstly, grate ½ gobi coarsely.In a bowl take 2 cup grated gobi.</li>
+                <li class="bg-black">Add ½ tsp garam masala, ½ tsp cumin powder, ½ tsp coriander powder, ½ tsp aamchur and ½ tsp salt.</li>
+                <li class="bg-black">Also add 1 inch ginger, grated, 2 chilli and 2 tbsp coriander.
+                    Mix well making sure all the spices are well combined.</li>
+                <li class="bg-black">Further to prepare the dough, in a large bowl take 2 cup wheat flour,Add water as required and knead to smooth and soft dough.</li>
+                <li class="bg-black">Now pinch a ball-sized dough and roll about 4 inches in diameter.</li>
+                <li class="bg-black">Place a ball-sized prepared gobi stuffing in the centre.</li>
+                <li class="bg-black">Take the edge and start pleating bringing it to the centre.
+                    Also, join the pleats together and secure tight pinching off excess dough.
+                    </li>
+                <li class="bg-black">Sprinkle some wheat flour and roll slightly thick.</li>
+                <li class="bg-black">On a hot tawa place the rolled paratha and cook for a minute.</li>
+                <li class="bg-black">Furthermore, flip the paratha when the base is partly cooked (after a minute).
+                </li>
+                <li class="bg-black">Also, brush oil/ghee and press slightly. flip again once or twice till both sides are cooked properly.
+                </li>
+               <!--<li class="bg-black">Cover and cook until the cheese melts.</li>-->
+                <li class="bg-black">Finally, serve hot gobi paratha with sauce, raita or pickle.</li>
+                
+            </ol>
+        </div>
+    </section>
+    <footer>
+        <div class="footer-container">
+          <div class="footer-links">
+            <a href="#home">Home</a>
+            <a href="#breakfast">Breakfast</a>
+            <a href="#lunch">Lunch</a>
+            <a href="#dinner">Dinner</a>
+            <a href="#desserts">Desserts</a>
+            <a href="#contact">Contact Us</a>
+          </div>
+      
+          <div class="newsletter">
+            <p>Subscribe to our newsletter for the latest recipes!</p>
+            <form onsubmit="showThankYou(event)">
+              <input type="email" placeholder="Enter your email" required>
+              <button type="submit">Subscribe</button>
+            </form>
+            <p id="thank-you-message" style="display: none; color: green;">Thank you for subscribing!</p>
+          </div>
+      
+          <p>&copy; 2024 Your Recipe Website. All Rights Reserved.</p>
+          <button class="back-to-top" onclick="scrollToTop()">Back to Top</button>
+        </div>
+      </footer>
+      
+<script src="scripts/main.js"></script>
+<script src="scripts/bfrecipe1.js"></script>
+<script src="scripts/footer.js"></script>
+
+</body>
+</html>

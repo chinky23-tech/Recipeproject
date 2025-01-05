@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cooking Recipe Website</title>
+   <link rel="stylesheet" href="styles/main.css">
+ <link rel="stylesheet" href="styles/bfrecipe9.css">
+   <link rel="stylesheet" href="styles/footer.css">
+
+
+</head>
+<body>
+    <header class="navbar">
+        <div class="logo">
+            <a href="index.html">Recipe Hub</a>
+        </div>
+        <div class="hamburger" onclick="toggleMenu()">
+            <span></span>
+            <span></span>
+            <span></span>
+          </div>
+        <nav>
+            <ul class="nav-links">
+             
+                <li><a href="all-recipes.html">Recipes</a></li>
+                <li><a href="InstantPot.html">Instant Pot</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="about.html">About us</a></li>
+            </ul>
+        </nav>
+
+    </header>
+    <section id="hero2">
+        <div class="hero2-recipe">
+            <img src="images/breakfast/Spinach-Omelette.jpg" alt="sandwich" class="recipe2">
+        
+        <div class="hero2-text">
+            <h1>Packed with nutrients and bursting with flavor - Spinach omelette
+            </h1>
+        </div>
+        </div>
+    </section>
+
+        <!-- Recipe Details -->
+        <section class="recipe-details">
+            <div class="info">
+                <p><strong>Cuisine:</strong>  Indian Food</p>
+                <p><strong>Prep Time:</strong>  4 mins</p>
+                <p><strong>Cook Time:</strong>  5 mins</p>
+              <!-- <p><strong>Soaking Time:</strong> 3 hrs</p>-->
+                <p><strong>Total Time:</strong>  9 mins</p>
+                <p id="text">Green goodness in every bite!
+                </p>
+            </div>
+            
+        </section>
+    
+      
+    <section class="button-section">
+        <button id="reviewBtn">Review</button>
+        <button id="printBtn">Print</button>
+        <button id="saveBtn">Save</button>
+    </section>
+    
+<!-- Modal Popup for Review -->
+<div id="reviewModal" class="modal" style="display: none;">
+    <div class="modal-content">
+        <textarea id="reviewText" placeholder="Write your review..."></textarea>
+        <button id="submitReview">Submit</button>
+        <button id="closeModal">Close</button>
+    </div>
+</div>
+
+
+    <!-- Ingredients and Method -->
+    <section class="ingredients-method">
+        <div class="ingredients">
+            <h2>Ingredients</h2>
+            <ul>
+                <li><label class="custom-checkbox"><input type="checkbox"><span class="checkmark"></span>
+                    2 to 3 eggs
+
+                    
+                    </label>
+                </li>
+    
+                
+                <li>
+                    <label class="custom-checkbox">
+                        <input type="checkbox"> <span class="checkmark"></span>1 cup spinach fine chopped
+                    </label>
+                    </li>
+                <li>
+                    <label class="custom-checkbox">
+                        <input type="checkbox">
+                         <span class="checkmark"></span>
+                         1 tbsp milk skimmed optional
+                         ¼ cup coriander leaves
+
+
+                        </label>
+                    </li>
+                <li>
+                    <label class="custom-checkbox">
+                        <input type="checkbox"> 
+                        <span class="checkmark"></span> 
+                        
+                        ¼ tbsp salt
+
+
+                    </label>
+                </li>
+                <li><label class="custom-checkbox"><input type="checkbox"> <span class="checkmark"></span> 1 green chilli
+
+
+
+                </label></li>
+                <li><label class="custom-checkbox"><input type="checkbox"> <span class="checkmark"></span> 2 cloves garlic
+                </label></li>
+                <li><label class="custom-checkbox"><input type="checkbox"> <span class="checkmark"></span> 
+                     1 tbsp butter or oil or ghee
+                    
+
+
+                </label></li>
+                <li><label class="custom-checkbox"><input type="checkbox"> <span class="checkmark"></span>¼ tsp oregano / chilli flakes
+                </label></li>
+                <li><label class="custom-checkbox"><input type="checkbox"> <span class="checkmark"></span> black pepper
+
+                </label></li>
+                <li><label class="custom-checkbox"><input type="checkbox"> <span class="checkmark"></span> 2 tbsp cheese
+
+
+                </label></li>
+               <!-- <li><label class="custom-checkbox"><input type="checkbox"> <span class="checkmark"></span> 
+
+
+                </label></li>-->
+               <!-- <li><label class="custom-checkbox"><input type="checkbox">  <span class="checkmark"></span>
+                </label></li>-->
+              <!-- <li><label class="custom-checkbox"><input type="checkbox">  <span class="checkmark"></span>
+                </label></li>-->
+            </ul>
+        </div>
+        <div class="method">
+            <h2>Method</h2>
+            <ol>
+                <li class="bg-black">Firstly crack the eggs into a bowl and a tablespoon of milk. </li>
+                
+                <li class="bg-black">
+                    Thinly slice the garlic. Add a pinch of salt.
+                </li>
+                <li class="bg-black">
+                    Wash and chop the spinach leaves.
+                </li>
+                <li class="bg-black">
+                    And whisk the eggs gently for the yolk to mix well.
+                </li>
+                <li class="bg-black">
+                   Heat a frying pan.
+                </li>
+                <li class="bg-black"> 
+                    And add the chopped spinach , garlic and sprinkle some salt.
+
+                </li>
+                <li class="bg-black"> 
+                 Let the leaves wilt, and take them off the pan.
+                </li>
+               <li class="bg-black">
+Pour a tsp oil on the pan and spread it evenly with a spatula .
+
+            </li>
+                <li class="bg-black">
+
+Reduce the flame to medium, and pour the egg mixture.
+                </li>
+                <li class="bg-black">
+                    
+Tilt the pan and let the eggs spread evenly.
+
+                </li>
+                <li class="bg-black">
+
+As soon as the omelette start to set , lift near the edges with the spatula  so that the uncooked eggs can reach the bottom of the pan.
+                </li>
+                <li class="bg-black">
+                    Once the center starts to set, Now sprinkle the grated cheese on top of it.
+
+                </li>
+              <li class="bg-black">
+Lower the flame and cook further . wait for the cheese to start melting.and once the omelette starts to get detached from sides.
+
+                </li>
+                <li class="bg-black">fold in half. Gently slide the omelette to a plate.Enjoy Spinach omelette as a healthy morning breakfast.</li>
+            </ol>
+        </div>
+    </section>
+    <footer>
+        <div class="footer-container">
+          <div class="footer-links">
+            <a href="#home">Home</a>
+            <a href="#breakfast">Breakfast</a>
+            <a href="#lunch">Lunch</a>
+            <a href="#dinner">Dinner</a>
+            <a href="#desserts">Desserts</a>
+            <a href="#contact">Contact Us</a>
+          </div>
+      
+          <div class="newsletter">
+            <p>Subscribe to our newsletter for the latest recipes!</p>
+            <form onsubmit="showThankYou(event)">
+              <input type="email" placeholder="Enter your email" required>
+              <button type="submit">Subscribe</button>
+            </form>
+            <p id="thank-you-message" style="display: none; color: green;">Thank you for subscribing!</p>
+          </div>
+      
+          <p>&copy; 2024 Your Recipe Website. All Rights Reserved.</p>
+          <button class="back-to-top" onclick="scrollToTop()">Back to Top</button>
+        </div>
+      </footer>
+      
+<script src="scripts/main.js"></script>
+<script src="scripts/bfrecipe1.js"></script>
+<script src="scripts/footer.js"></script>
+
+</body>
+</html>

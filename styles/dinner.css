@@ -1,0 +1,98 @@
+
+
+
+#dinner-title {
+    text-align: center;
+    margin: 20px 0;
+    color: #333;
+}
+
+/* Grid Container */
+.dinner-page-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr); /* 3 cards per row */
+    gap: 20px;
+    margin: 20px;
+}
+
+/* Recipe Card Styles */
+.dinner-page-card {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    text-align: center;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+.dinner-page-card a {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-decoration: none; 
+    color: inherit; 
+}
+.dinner-page-card img {
+    width: 100%;
+    height: 150px;
+    object-fit: cover;
+}
+
+.dinner-page-card h3 {
+    margin: 10px;
+    font-size: 1rem;
+    color: #333;
+}
+
+/* Hover Effect */
+.dinner-page-card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+}
+
+/* Special Card */
+.dinner-page-card.special-card {
+    grid-column: span 2; /* Spans across 3 columns to fill the last row */
+    height: 195px; /* Same height as other cards */
+}
+.dinner-page-card.special-card img {
+    height: 150px; /* Adjust height to fit the special card */
+}
+
+.dinner-page-card.special-card.special-card h3 {
+    font-size: 1.2rem; /* Slightly larger text */
+    font-weight: bold;
+}
+/* For Tablets (Width <= 768px) */
+@media (max-width: 768px) {
+    .dinner-page-grid {
+        grid-template-columns: repeat(2, 1fr); /* 2 columns for tablets */
+    }
+    .dinner-page-card.special-card {
+        grid-column: span 2; /* Spans across 2 columns */
+    }
+  
+}
+
+/* For Mobile Phones (Width <= 480px) */
+@media (max-width: 480px) {
+    .dinner-page-grid {
+        grid-template-columns: 1fr; /* Single column for mobile phones */
+    }
+    .dinner-page-card.special-card {
+        grid-column: span 1; /* Single column for the special card */
+    }
+    img {
+        max-width: 100%;
+        height: auto;
+    }
+    
+}
+@media (max-width: 480px) {
+    h1 {
+        font-size: 1.5rem;
+    }
+    h3 {
+        font-size: 1rem;
+    }
+}

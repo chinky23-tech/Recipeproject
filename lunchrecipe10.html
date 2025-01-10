@@ -1,0 +1,276 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cooking Recipe Website</title>
+   <link rel="stylesheet" href="styles/main.css">
+ <link rel="stylesheet" href="styles/lunchrecipe10.css">
+   <link rel="stylesheet" href="styles/footer.css">
+
+
+</head>
+<body>
+    <header class="navbar">
+        <div class="logo">
+            <a href="index.html">Recipe Hub</a>
+        </div>
+        <div class="hamburger" onclick="toggleMenu()">
+            <span></span>
+            <span></span>
+            <span></span>
+          </div>
+        <nav>
+            <ul class="nav-links">
+             
+                <li><a href="all-recipes.html">Recipes</a></li>
+                <li><a href="InstantPot.html">Instant Pot</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="about.html">About us</a></li>
+            </ul>
+        </nav>
+
+    </header>
+    <section id="hero2">
+        <div class="hero2-recipe">
+            <img src="images/lunch/Afgani paneer.jpg" alt="sandwich" class="recipe2">
+        
+        <div class="hero2-text">
+            <h1>Enjoy  Afgani Paneer – The Ultimate Anytime Comfort Food!</h1>
+        </div>
+        </div>
+    </section>
+
+        <!-- Recipe Details -->
+        <section class="recipe-details">
+            <div class="info">
+                <p><strong>Cuisine:</strong> North India</p>
+                <p><strong>Prep Time:</strong>  10 mins</p>
+                <p><strong>Cook Time:</strong>  15 mins</p>
+                <p><strong>Total Time:</strong>  25 mins</p>
+                <p id="text">A classic comfort food  - Afgani Paneer</p>
+            </div>
+            
+        </section>
+    
+      
+    <section class="button-section">
+        <button id="reviewBtn">Review</button>
+        <button id="printBtn">Print</button>
+        <button id="saveBtn">Save</button>
+    </section>
+    
+<!-- Modal Popup for Review -->
+<div id="reviewModal" class="modal" style="display: none;">
+    <div class="modal-content">
+        <textarea id="reviewText" placeholder="Write your review..."></textarea>
+        <button id="submitReview">Submit</button>
+        <button id="closeModal">Close</button>
+    </div>
+</div>
+
+
+    <!-- Ingredients and Method -->
+    <section class="ingredients-method">
+        <div class="ingredients">
+            <h2>Ingredients</h2>
+            <ul>
+                <li><label class="custom-checkbox"><input type="checkbox"> <span class="checkmark"></span>
+                  paste making :  Oil: 2 Tbsp
+
+                </label>
+                </li>
+    
+                
+                <li>
+                    <label class="custom-checkbox">
+                        <input type="checkbox"> <span class="checkmark"></span>
+                        Sliced Onions: 3-4 pcs
+
+
+                    </label>
+                    </li>
+                <li>
+                    <label class="custom-checkbox">
+                        <input type="checkbox">
+                         <span class="checkmark"></span>
+                         Garlic: 6-7 pcs
+
+          
+                        </label>
+                    </li>
+                <li>
+                    <label class="custom-checkbox">
+                        <input type="checkbox"> 
+                        <span class="checkmark"></span> 
+                        
+                        Ginger (Chopped): ½ pc
+
+                    </label>
+                </li>
+                <li><label class="custom-checkbox"><input type="checkbox"> <span class="checkmark"></span> 
+                    Slit Green Chilli: 3-4 pcs
+
+
+
+                </label></li>
+                <li><label class="custom-checkbox"><input type="checkbox"> <span class="checkmark"></span> Salt: 1 tsp
+                </label></li>
+                <li><label class="custom-checkbox"><input type="checkbox"> <span class="checkmark"></span> Coriander Leaves: ½ cup
+                </label></li>
+                <li><label class="custom-checkbox"><input type="checkbox"> <span class="checkmark"></span>Water as required </label></li>
+                <li><label class="custom-checkbox"><input type="checkbox"> <span class="checkmark"></span>Curd Mixture:1 cup curd
+                   
+                </label></li>
+                <li><label class="custom-checkbox"><input type="checkbox"> <span class="checkmark">
+                </span> Coriander Powder: 1 tsp
+                </label></li>
+                <li><label class="custom-checkbox"><input type="checkbox"> <span class="checkmark">
+                </span>Jeera Powder: ½ tsp
+
+                </label></li>
+                <li><label class="custom-checkbox"><input type="checkbox"> <span class="checkmark"></span>Turmeric Powder: ¼ tsp
+                </label></li>
+                <li><label class="custom-checkbox"><input type="checkbox"> <span class="checkmark"> </span> Garam Masala: ½ tsp
+
+
+                   
+
+                </label></li>
+                <li><label class="custom-checkbox"><input type="checkbox"> <span class="checkmark"> </span> Gravy: 1 tsp oil
+
+
+                   
+
+                </label></li>
+                <li><label class="custom-checkbox"><input type="checkbox"> <span class="checkmark"> </span> Bay Leaf: 1 pc
+                    Green Cardamom: 2 pcs
+                    
+
+
+                   
+
+                </label></li>
+                <li><label class="custom-checkbox"><input type="checkbox"> <span class="checkmark"> </span> Cinnamon: ½ pc
+                    Cloves: 4-5 pcs
+
+
+                   
+
+                </label></li>
+                <li><label class="custom-checkbox"><input type="checkbox"> <span class="checkmark"> </span> Black Peppercorns: 7-8 pcs
+
+
+
+                   
+
+                </label></li>
+                <li><label class="custom-checkbox"><input type="checkbox"> <span class="checkmark"> </span> Afghani Paneer Paste,
+                    Curd Mixture
+                    
+
+
+                   
+
+                </label></li>
+                <li><label class="custom-checkbox"><input type="checkbox"> <span class="checkmark"> </span> 
+                    Water: As required
+Cashew Paste: ¼ cup
+
+                    
+
+
+                   
+
+                </label></li>
+                <li><label class="custom-checkbox"><input type="checkbox"> <span class="checkmark"> </span> 
+
+                    Shallow Fried Paneer
+                   
+
+                </label></li>
+                <li><label class="custom-checkbox"><input type="checkbox"> <span class="checkmark"> </span> 
+                    
+                    
+                    Fresh Cream: 2 tbsp
+
+
+                   
+
+                </label></li>
+                
+                
+            </ul>
+        </div>
+        <div class="method">
+            <h2>Method</h2>
+            <ol>
+                <li class="bg-black">Sauté Onions and Spices: Heat 2 Tbsp oil in a pan over medium heat. Add 3-4 sliced onions and sauté until they turn golden brown. Add 6-7 minced garlic cloves, ½ chopped ginger, 3-4 slit green chilies, and 1 tsp salt. Continue to sauté until the raw aroma of garlic disappears.
+
+                </li>
+                <li class="bg-black">
+                    Blend the Paste: Add ½ cup coriander leaves and a little water to the pan. Stir well, then transfer the mixture to a blender. Blend into a smooth paste, adding water as needed for the desired consistency. Set aside.
+
+                    </li>
+               
+                <li class="bg-black">Mix Spices with Curd: In a mixing bowl, combine 1 cup curd, 1 tsp coriander powder, ½ tsp jeera powder, ¼ tsp turmeric powder, and ½ tsp garam masala. Whisk together until well combined. This mixture will be added to the gravy later.
+                </li>
+
+                <li class="bg-black">
+                    Marinate Paneer: Cut 250 gms of paneer into cubes. Season with ½ tsp salt, a pinch of garam masala, and ½ tsp crushed black pepper. In a separate bowl, mix 1 tbsp ginger-garlic paste, a pinch of hing, ½ tsp turmeric powder, 3 tbsp curd, and 1 tbsp fresh cream to form a marinade
+
+                </li>
+                <li class="bg-black">
+                    Cook Paneer: Coat the paneer cubes with the marinade and let them sit for 15-20 minutes. Heat 1 tbsp oil in a pan and shallow fry the marinated paneer cubes until golden brown on all sides. Set aside.
+
+                </li>
+                <li class="bg-black">
+                    Sauté Spices: Heat 1 tsp oil and 1 tsp ghee in a heavy-bottomed pan. Add 1 bay leaf, 2 green cardamom pods, ½ cinnamon stick, 4-5 cloves, and 7-8 black peppercorns. Sauté for a minute until fragrant.
+                    </li>
+                <li class="bg-black">Add Paste and Cook: Add the prepared Afghani paneer paste to the pan. Sauté on medium heat until the raw smell is gone and the mixture becomes aromatic. Gradually add the curd mixture, stirring continuously to avoid curdling. Cook on low heat until the mixture thickens slightly.
+
+                </li>
+                <li class="bg-black">Add Cashew Paste and Adjust Consistency: Stir in ¼ cup cashew paste and cook for a few more minutes until the gravy becomes rich and thick. Adjust the consistency with water as needed.
+
+                </li>
+                <li class="bg-black">Add Paneer and Cream: Add the shallow-fried paneer cubes into the gravy. Allow them to simmer for a few minutes to absorb the flavors. Finish by stirring in 2 tbsp fresh cream for added richness.
+
+
+                </li>
+               
+              
+            </ol>
+        </div>
+    </section>
+    <footer>
+        <div class="footer-container">
+          <div class="footer-links">
+            <a href="#home">Home</a>
+            <a href="#breakfast">Breakfast</a>
+            <a href="#lunch">Lunch</a>
+            <a href="#dinner">Dinner</a>
+            <a href="#desserts">Desserts</a>
+            <a href="#contact">Contact Us</a>
+          </div>
+      
+          <div class="newsletter">
+            <p>Subscribe to our newsletter for the latest recipes!</p>
+            <form onsubmit="showThankYou(event)">
+              <input type="email" placeholder="Enter your email" required>
+              <button type="submit">Subscribe</button>
+            </form>
+            <p id="thank-you-message" style="display: none; color: green;">Thank you for subscribing!</p>
+          </div>
+      
+          <p>&copy; 2024 Your Recipe Website. All Rights Reserved.</p>
+          <button class="back-to-top" onclick="scrollToTop()">Back to Top</button>
+        </div>
+      </footer>
+      
+<script src="scripts/main.js"></script>
+<script src="scripts/bfrecipe1.js"></script>
+<script src="scripts/footer.js"></script>
+
+</body>
+</html>

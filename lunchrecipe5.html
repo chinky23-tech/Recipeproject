@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cooking Recipe Website</title>
+   <link rel="stylesheet" href="styles/main.css">
+ <link rel="stylesheet" href="styles/lunchrecipe5.css">
+   <link rel="stylesheet" href="styles/footer.css">
+
+
+</head>
+<body>
+    <header class="navbar">
+        <div class="logo">
+            <a href="index.html">Recipe Hub</a>
+        </div>
+        <div class="hamburger" onclick="toggleMenu()">
+            <span></span>
+            <span></span>
+            <span></span>
+          </div>
+        <nav>
+            <ul class="nav-links">
+             
+                <li><a href="all-recipes.html">Recipes</a></li>
+                <li><a href="InstantPot.html">Instant Pot</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="about.html">About us</a></li>
+            </ul>
+        </nav>
+
+    </header>
+    <section id="hero2">
+        <div class="hero2-recipe">
+            <img src="images/lunch/Palak-Chicken.jpg" alt="sandwich" class="recipe2">
+        
+        <div class="hero2-text">
+            <h1>Enjoy   Palak chicken – The Ultimate Anytime Comfort Food!</h1>
+        </div>
+        </div>
+    </section>
+
+        <!-- Recipe Details -->
+        <section class="recipe-details">
+            <div class="info">
+                <p><strong>Cuisine:</strong> North India</p>
+                <p><strong>Prep Time:</strong>  10 mins</p>
+                <p><strong>Cook Time:</strong>  15 mins</p>
+                <p><strong>Total Time:</strong>  25 mins</p>
+                <p id="text">A classic comfort food  - Palak chicken</p>
+            </div>
+            
+        </section>
+    
+      
+    <section class="button-section">
+        <button id="reviewBtn">Review</button>
+        <button id="printBtn">Print</button>
+        <button id="saveBtn">Save</button>
+    </section>
+    
+<!-- Modal Popup for Review -->
+<div id="reviewModal" class="modal" style="display: none;">
+    <div class="modal-content">
+        <textarea id="reviewText" placeholder="Write your review..."></textarea>
+        <button id="submitReview">Submit</button>
+        <button id="closeModal">Close</button>
+    </div>
+</div>
+
+
+    <!-- Ingredients and Method -->
+    <section class="ingredients-method">
+        <div class="ingredients">
+            <h2>Ingredients</h2>
+            <ul>
+                <li>
+                    <label class="custom-checkbox">
+                        <input type="checkbox">
+                        <span class="checkmark"></span>
+    
+                        1.5 lb (~750g) chicken thighs  
+
+                    </label>
+                </li>
+    
+                <li>
+                    <label class="custom-checkbox">
+                        <input type="checkbox">
+                        <span class="checkmark"></span>
+    
+                        boneless & skinless
+
+                    </label>
+                </li>
+                <li>
+                    <label class="custom-checkbox">
+                        <input type="checkbox">
+                        <span class="checkmark"></span>
+    
+                        cut into 2 inch cubes
+
+                    </label>
+                </li>
+    
+                <li>
+                   
+                    <label class="custom-checkbox">
+                        <input type="checkbox"> <span class="checkmark"></span>
+
+                        For The Spice Rub: 
+  </label>
+                    </li>
+                   <li><label class="custom-checkbox">
+                        <input type="checkbox"> <span class="checkmark"></span>
+                        4 whole  kashmiri red chilies 
+  </label>
+                    </li>
+
+               
+                    
+                <li>
+                    
+                    <label class="custom-checkbox">
+                        <input type="checkbox"> 
+                        <span class="checkmark"></span> 
+                     
+
+                        ¼ teaspoon fennel seeds
+                    </label>
+                </li>
+                <li><label class="custom-checkbox"><input type="checkbox"> <span class="checkmark"></span> 
+
+                    1 teaspoon cumin seeds
+
+
+                </label></li>
+                <li><label class="custom-checkbox"><input type="checkbox"> <span class="checkmark"></span> 12-15 black peppercorns </label></li>
+                <li><label class="custom-checkbox"><input type="checkbox"> <span class="checkmark"></span> 4 cloves,¼ turmeric powder
+                </label></li>
+                <li><label class="custom-checkbox"><input type="checkbox"> <span class="checkmark"></span>½ teaspoon red chilli powder </label></li>
+                <li><label class="custom-checkbox"><input type="checkbox"> <span class="checkmark"></span>½ teaspoon salt
+                    
+                </label></li>
+                <li><label class="custom-checkbox"><input type="checkbox"> <span class="checkmark"></span> For spinach: 4 tbsp
+
+                </label></li>
+                <li><label class="custom-checkbox"><input type="checkbox"> <span class="checkmark"></span>  mustard oil or any cooking oil
+
+                </label></li>
+                <li><label class="custom-checkbox"><input type="checkbox"> <span class="checkmark"></span> 1 inch cinnamon stick
+
+
+                </label></li>
+                <li><label class="custom-checkbox"><input type="checkbox"> <span class="checkmark"></span> 1 black cardamom</label></li>
+                <li><label class="custom-checkbox"><input type="checkbox"> <span class="checkmark"> </span> 1 large bay leaf
+
+                   
+
+                </label></li>
+                <li><label class="custom-checkbox"><input type="checkbox"> <span class="checkmark"> </span>1 cup chopped onion </label></li>
+                <li><label class="custom-checkbox"><input type="checkbox"> <span class="checkmark"> </span> 2 garlic cloves minced</label></li>
+                <li><label class="custom-checkbox"><input type="checkbox"> <span class="checkmark"> </span> ¼ inch ginger julinned
+                </label></li>
+                <li><label class="custom-checkbox"><input type="checkbox"> <span class="checkmark"> </span>¾ cup tomato puree </label></li>
+                <li><label class="custom-checkbox"><input type="checkbox"> <span class="checkmark"> </span> 10 cup fresh spinach</label></li>
+                <li><label class="custom-checkbox"><input type="checkbox"> <span class="checkmark"> </span> ¼- ⅓ cup hot water</label></li>
+                <li><label class="custom-checkbox"><input type="checkbox"> <span class="checkmark"> </span>½ teaspoon salt adjust to taste </label></li>
+                <li><label class="custom-checkbox"><input type="checkbox"> <span class="checkmark"> </span>½ teaspoon garam masala
+                </label></li>
+                <li><label class="custom-checkbox"><input type="checkbox"> <span class="checkmark"> </span>2 tablespoon heavy cream optional </label></li>
+            </ul>
+        </div>
+        <div class="method">
+            <h2>Method</h2>
+            <ol>
+                <li class="bg-black">Pat the chicken completely dry. Add to a large bowl and set aside. In a small pan, dry roast the spices listed under the spice rub. Transfer to a coffee grinder and coarsely grind. 
+                </li>
+                <li class="bg-black">
+                    Sprinkle ground spices, salt, red chilli powder and turmeric powder. Rub so that all the pieces are covered in the spices. Cover the bowl and let stand. You could also set in the refrigerator for at least 3-4 hours .
+                    </li>
+               
+                <li class="bg-black">Make The Spinach Puree - Add spinach stems & leaves  to a pot of boiling water. Once the leaves are wilted and stems are soft, transfer to a blender. Process to make a spinach puree. 
+                </li>
+
+                <li class="bg-black">
+                    
+                    Chop the onions, blanch the tomatoes, julienne ginger, mince the garlic etc. In a wide pot  heat up mustard oil.
+
+                </li>
+                <li class="bg-black">
+                    Temper the oil with whole spices - cinnamon, black cardamom & bay leaf.Add the chopped onions and cook until they reach a light brown to golden brown stage.
+                </li>
+                <li class="bg-black">
+                    Add the ginger and garlic to the pot and fry for about 45 seconds. 
+
+                    </li>
+                <li class="bg-black">
+                    Now, add the chicken to the pot. Keep the flame on medium and stir to mix the chicken with the onion and garlic. Once mixed, allow the chicken to sear for 2-3 minutes. Adjust the searing time based on the size of the chicken pieces. While searing, avoid stirring too much to prevent the chicken from releasing its water instead of browning. Sear the chicken on all sides. 
+                </li>
+                <li class="bg-black">
+                    Add the tomato puree. Since the tomato puree . Fry it with the chicken for approximately 2 minutes.
+                </li>
+                <li class="bg-black">
+
+                    Add the spinach puree next. This is the moment to enhance the flavors. We will fry the chicken and spinach together, a technique known as bhunai, for the next 8-10 minutes until the chicken is thoroughly cooked. Bhunai develops smokiness in the spinach gravy, resulting in an aromatic and robust taste.
+
+                </li>
+                <li class="bg-black">
+                    While frying, stir occasionally to ensure even cooking until the chicken is done. You'll notice that the spinach sauce will deepen in color and start glistening.
+                    
+                </li>
+               <li class="bg-black">Take care to prevent the sauce from sticking to the bottom of the pot. If needed, add a splash of water as required to maintain a saucy consistency
+            </li>
+                <li class="bg-black">
+                    Finish the palak chicken curry with garam masala, nutmeg, crushed kasoori methi and 1-2 tablespoon of heavy cream. Let rest for 10-15 minutes before serving.
+
+                </li>
+              
+            </ol>
+        </div>
+    </section>
+    <footer>
+        <div class="footer-container">
+          <div class="footer-links">
+            <a href="#home">Home</a>
+            <a href="#breakfast">Breakfast</a>
+            <a href="#lunch">Lunch</a>
+            <a href="#dinner">Dinner</a>
+            <a href="#desserts">Desserts</a>
+            <a href="#contact">Contact Us</a>
+          </div>
+      
+          <div class="newsletter">
+            <p>Subscribe to our newsletter for the latest recipes!</p>
+            <form onsubmit="showThankYou(event)">
+              <input type="email" placeholder="Enter your email" required>
+              <button type="submit">Subscribe</button>
+            </form>
+            <p id="thank-you-message" style="display: none; color: green;">Thank you for subscribing!</p>
+          </div>
+      
+          <p>&copy; 2024 Your Recipe Website. All Rights Reserved.</p>
+          <button class="back-to-top" onclick="scrollToTop()">Back to Top</button>
+        </div>
+      </footer>
+      
+<script src="scripts/main.js"></script>
+<script src="scripts/bfrecipe1.js"></script>
+<script src="scripts/footer.js"></script>
+
+</body>
+</html>

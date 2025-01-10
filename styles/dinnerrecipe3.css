@@ -1,0 +1,1044 @@
+
+
+*{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f8f8f8;
+    color: #333;
+}
+
+
+:root{
+    --orange: #ff6347;
+    --black:#1c1d22;
+    --white:#ffffff;
+    --green: #00FF99;
+    --yellow: #CCFF66;
+}
+/* Hero Section */
+#hero2{
+    position: relative;
+    text-align: center;
+    color: var(--white);
+}
+.hero2-recipe  {
+    width: 100%;
+    height: 100px;
+}
+.recipe2{
+    margin: 20px;
+    height: 440px;
+    width: 85%;
+    border-radius: 10px;
+}
+.hero2-text {
+    position:relative;
+    top: -80%;
+    left:-100;
+    transform: translate( 2%);
+    
+    text-shadow: 2px 2px 8px #1c1d22;
+    font-size: 15px;
+    margin-top: 10px;
+    
+  
+
+}
+/* Recipe Details */
+.recipe-details {
+    padding: 20px;
+    background: #ffffff;
+  box-shadow: 2px 2px 8px #1c1d22;
+    margin-top: 25em;
+    border-radius: 15px;
+    width: 100;
+    
+}
+.recipe-details .info {
+    display: block;
+    justify-content: space-around;
+    padding: 10px;
+    line-height: 25px;
+     margin-left: 3em;
+     
+}
+#text{
+    margin-top: 25px;
+    font-size: 15px;
+}
+
+
+
+
+.modal {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: white;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    border-radius: 8px;
+}
+.modal-content textarea {
+    width: 100%;
+    height: 100px;
+    margin-bottom: 10px;
+}
+
+.button-section {
+    display: flex; 
+    justify-content: center; 
+    align-items: center; 
+   
+    background-color: #f9f9f9; 
+    margin: 30px;
+    gap: 20px;
+}
+
+button {
+    padding: 7px 60px;
+    border: none;
+    background: #ff6347;
+        color: var(--black);
+    cursor: pointer;
+    border-radius: 18px;
+    box-shadow: 2px 2px 8px #1c1d22;
+    
+}
+
+button:hover {
+    background-color: #ee4224;
+}
+
+
+/* Scoped styling for the ingredients-method section */
+.ingredients-method {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+    background-color: #f9f9f9;
+    border-radius: 8px;
+    gap: 20px;
+}
+
+.ingredients-method .ingredients,
+.ingredients-method .method {
+    flex: 1;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    background: #fff;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.ingredients-method h2 {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+    text-align: left;
+    color: #333;
+    text-decoration: underline;
+}
+
+/* List styling */
+.ingredients-method ul,
+.ingredients-method ol {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.ingredients-method ul li,
+.ingredients-method ol li {
+    margin-bottom: 10px;
+    font-size: 1rem;
+   
+}
+
+/* Custom checkbox styling */
+.custom-checkbox {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    cursor: pointer;
+    font-size: 1rem;
+    color: #333;
+}
+
+.custom-checkbox input[type="checkbox"] {
+    display: none;
+}
+
+.custom-checkbox .checkmark {
+    width: 15px;
+    height: 15px;
+    border: 2px solid var(--orange);
+    border-radius: 4px;
+    display: inline-block;
+    position: relative;
+    background-color: #fff;
+    transition: all 0.3s ease;
+}
+
+.custom-checkbox input[type="checkbox"]:checked + .checkmark {
+    background-color: var(--orange);
+    border-color: var(--orange);
+}
+
+.custom-checkbox .checkmark::after {
+    content: '';
+    position: absolute;
+    left: 3px;
+    top: 0;
+    width: 4px;
+    height: 9px;
+    border: solid white;
+    border-width: 0 2px 2px 0;
+    transform: rotate(45deg);
+    opacity: 0;
+    transition: all 0.3s ease;
+}
+
+.custom-checkbox input[type="checkbox"]:checked + .checkmark::after {
+    opacity: 1;
+}
+
+/* Method styling */
+.ingredients-method .method ol li {
+    background-color:#e5e5e5;
+    padding: 10px;
+    border-radius: 4px;
+    margin-bottom: 10px;
+}
+.method ol li:hover{
+    background-color: var(--orange);
+    cursor: pointer;
+}
+/* Highlight "bg-black" class (optional) */
+.ingredients-method .bg-black {
+    
+    color: rgb(30, 29, 29);
+    padding: 10px;
+    border-radius: 4px;
+}
+
+
+/* Responsive Design for Smaller Screens */
+@media (max-width: 768px) {
+   
+
+    /* Hero Section */
+    #hero2 {
+        text-align: center;
+    }
+
+    .hero2-recipe {
+        height: auto;
+    }
+
+    .recipe2 {
+        width: 100%;
+        height: auto;
+        margin: 10px auto;
+        border-radius: 8px;
+    }
+
+    .hero2-text {
+        font-size: 14px;
+        top: -60%;
+        transform: translate(0, 0);
+        margin: 0;
+       
+    }
+
+    /* Recipe Details */
+    .recipe-details {
+        margin-top: 2em;
+        padding: 15px;
+        border-radius: 10px;
+        box-shadow: 2px 2px 6px rgba(0, 0, 0, 0.1);
+        width: 100%;
+    }
+
+    .recipe-details .info {
+        margin-left: 0;
+        padding: 10px 0;
+        text-align: center;
+        line-height: 1.5;
+    }
+
+    #text {
+        font-size: 14px;
+        margin-top: 15px;
+    }
+
+    /* Ingredients and Method Section */
+    .ingredients-method {
+        flex-direction: column;
+        gap: 15px;
+        padding: 10px;
+    }
+
+    .ingredients-method .ingredients,
+    .ingredients-method .method {
+        width: 100%;
+        padding: 15px;
+        margin: 0 auto;
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    }
+
+    .ingredients-method h2 {
+        font-size: 1.2rem;
+        margin-bottom: 10px;
+    }
+
+    .ingredients-method ul li,
+    .ingredients-method ol li {
+        font-size: 0.9rem;
+        margin-bottom: 8px;
+    }
+
+    /* Buttons */
+    .button-section {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    button {
+        font-size: 0.9rem;
+        padding: 10px 20px;
+        width: 100%;
+        max-width: 300px;
+        margin: 0 auto;
+    }
+
+    /* Modal */
+    .modal {
+        width: 90%;
+        padding: 15px;
+    }
+
+    .modal-content textarea {
+        height: 80px;
+    }
+
+    /* Custom Checkbox */
+    .custom-checkbox {
+        font-size: 0.9rem;
+    }
+
+    .custom-checkbox .checkmark {
+        width: 12px;
+        height: 12px;
+    }
+
+    /* Method Styling */
+    .ingredients-method .method ol li {
+        padding: 8px;
+        font-size: 0.9rem;
+        border-radius: 6px;
+    }
+}
+
+
+*{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f8f8f8;
+    color: #333;
+}
+
+
+:root{
+    --orange: #ff6347;
+    --black:#1c1d22;
+    --white:#ffffff;
+    --green: #00FF99;
+    --yellow: #CCFF66;
+}
+/* Hero Section */
+#hero2{
+    position: relative;
+    text-align: center;
+    color: var(--white);
+}
+.hero2-recipe  {
+    width: 100%;
+    height: 100px;
+}
+.recipe2{
+    margin: 20px;
+    height: 440px;
+    width: 85%;
+    border-radius: 10px;
+}
+.hero2-text {
+    position:relative;
+    top: -80%;
+    left:-100;
+    transform: translate( 2%);
+    
+    text-shadow: 2px 2px 8px #1c1d22;
+    font-size: 15px;
+    margin-top: 10px;
+    
+  
+
+}
+/* Recipe Details */
+.recipe-details {
+    padding: 20px;
+    background: #ffffff;
+  box-shadow: 2px 2px 8px #1c1d22;
+    margin-top: 25em;
+    border-radius: 15px;
+    width: 100;
+    
+}
+.recipe-details .info {
+    display: block;
+    justify-content: space-around;
+    padding: 10px;
+    line-height: 25px;
+     margin-left: 3em;
+     
+}
+#text{
+    margin-top: 25px;
+    font-size: 15px;
+}
+
+
+
+
+.modal {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: white;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    border-radius: 8px;
+}
+.modal-content textarea {
+    width: 100%;
+    height: 100px;
+    margin-bottom: 10px;
+}
+
+.button-section {
+    display: flex; 
+    justify-content: center; 
+    align-items: center; 
+   
+    background-color: #f9f9f9; 
+    margin: 30px;
+    gap: 20px;
+}
+
+button {
+    padding: 7px 60px;
+    border: none;
+    background: #ff6347;
+        color: var(--black);
+    cursor: pointer;
+    border-radius: 18px;
+    box-shadow: 2px 2px 8px #1c1d22;
+    
+}
+
+button:hover {
+    background-color: #ee4224;
+}
+
+
+/* Scoped styling for the ingredients-method section */
+.ingredients-method {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+    background-color: #f9f9f9;
+    border-radius: 8px;
+    gap: 20px;
+}
+
+.ingredients-method .ingredients,
+.ingredients-method .method {
+    flex: 1;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    background: #fff;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.ingredients-method h2 {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+    text-align: left;
+    color: #333;
+    text-decoration: underline;
+}
+
+/* List styling */
+.ingredients-method ul,
+.ingredients-method ol {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.ingredients-method ul li,
+.ingredients-method ol li {
+    margin-bottom: 10px;
+    font-size: 1rem;
+   
+}
+
+/* Custom checkbox styling */
+.custom-checkbox {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    cursor: pointer;
+    font-size: 1rem;
+    color: #333;
+}
+
+.custom-checkbox input[type="checkbox"] {
+    display: none;
+}
+
+.custom-checkbox .checkmark {
+    width: 15px;
+    height: 15px;
+    border: 2px solid var(--orange);
+    border-radius: 4px;
+    display: inline-block;
+    position: relative;
+    background-color: #fff;
+    transition: all 0.3s ease;
+}
+
+.custom-checkbox input[type="checkbox"]:checked + .checkmark {
+    background-color: var(--orange);
+    border-color: var(--orange);
+}
+
+.custom-checkbox .checkmark::after {
+    content: '';
+    position: absolute;
+    left: 3px;
+    top: 0;
+    width: 4px;
+    height: 9px;
+    border: solid white;
+    border-width: 0 2px 2px 0;
+    transform: rotate(45deg);
+    opacity: 0;
+    transition: all 0.3s ease;
+}
+
+.custom-checkbox input[type="checkbox"]:checked + .checkmark::after {
+    opacity: 1;
+}
+
+/* Method styling */
+.ingredients-method .method ol li {
+    background-color:#e5e5e5;
+    padding: 10px;
+    border-radius: 4px;
+    margin-bottom: 10px;
+}
+.method ol li:hover{
+    background-color: var(--orange);
+    cursor: pointer;
+}
+/* Highlight "bg-black" class (optional) */
+.ingredients-method .bg-black {
+    
+    color: rgb(30, 29, 29);
+    padding: 10px;
+    border-radius: 4px;
+}
+
+
+/* Responsive Design for Smaller Screens */
+@media (max-width: 768px) {
+   
+
+    /* Hero Section */
+    #hero2 {
+        text-align: center;
+    }
+
+    .hero2-recipe {
+        height: auto;
+    }
+
+    .recipe2 {
+        width: 100%;
+        height: auto;
+        margin: 10px auto;
+        border-radius: 8px;
+    }
+
+    .hero2-text {
+        font-size: 14px;
+        top: -60%;
+        transform: translate(0, 0);
+        margin: 0;
+       
+    }
+
+    /* Recipe Details */
+    .recipe-details {
+        margin-top: 2em;
+        padding: 15px;
+        border-radius: 10px;
+        box-shadow: 2px 2px 6px rgba(0, 0, 0, 0.1);
+        width: 100%;
+    }
+
+    .recipe-details .info {
+        margin-left: 0;
+        padding: 10px 0;
+        text-align: center;
+        line-height: 1.5;
+    }
+
+    #text {
+        font-size: 14px;
+        margin-top: 15px;
+    }
+
+    /* Ingredients and Method Section */
+    .ingredients-method {
+        flex-direction: column;
+        gap: 15px;
+        padding: 10px;
+    }
+
+    .ingredients-method .ingredients,
+    .ingredients-method .method {
+        width: 100%;
+        padding: 15px;
+        margin: 0 auto;
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    }
+
+    .ingredients-method h2 {
+        font-size: 1.2rem;
+        margin-bottom: 10px;
+    }
+
+    .ingredients-method ul li,
+    .ingredients-method ol li {
+        font-size: 0.9rem;
+        margin-bottom: 8px;
+    }
+
+    /* Buttons */
+    .button-section {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    button {
+        font-size: 0.9rem;
+        padding: 10px 20px;
+        width: 100%;
+        max-width: 300px;
+        margin: 0 auto;
+    }
+
+    /* Modal */
+    .modal {
+        width: 90%;
+        padding: 15px;
+    }
+
+    .modal-content textarea {
+        height: 80px;
+    }
+
+    /* Custom Checkbox */
+    .custom-checkbox {
+        font-size: 0.9rem;
+    }
+
+    .custom-checkbox .checkmark {
+        width: 12px;
+        height: 12px;
+    }
+
+    /* Method Styling */
+    .ingredients-method .method ol li {
+        padding: 8px;
+        font-size: 0.9rem;
+        border-radius: 6px;
+    }
+}
+
+
+*{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f8f8f8;
+    color: #333;
+}
+
+
+:root{
+    --orange: #ff6347;
+    --black:#1c1d22;
+    --white:#ffffff;
+    --green: #00FF99;
+    --yellow: #CCFF66;
+}
+/* Hero Section */
+#hero2{
+    position: relative;
+    text-align: center;
+    color: var(--white);
+}
+.hero2-recipe  {
+    width: 100%;
+    height: 100px;
+}
+.recipe2{
+    margin: 20px;
+    height: 440px;
+    width: 85%;
+    border-radius: 10px;
+}
+.hero2-text {
+    position:relative;
+    top: -80%;
+    left:-100;
+    transform: translate( 2%);
+    
+    text-shadow: 2px 2px 8px #1c1d22;
+    font-size: 15px;
+    margin-top: 10px;
+    
+  
+
+}
+/* Recipe Details */
+.recipe-details {
+    padding: 20px;
+    background: #ffffff;
+  box-shadow: 2px 2px 8px #1c1d22;
+    margin-top: 25em;
+    border-radius: 15px;
+    width: 100;
+    
+}
+.recipe-details .info {
+    display: block;
+    justify-content: space-around;
+    padding: 10px;
+    line-height: 25px;
+     margin-left: 3em;
+     
+}
+#text{
+    margin-top: 25px;
+    font-size: 15px;
+}
+
+
+
+
+.modal {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: white;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    border-radius: 8px;
+}
+.modal-content textarea {
+    width: 100%;
+    height: 100px;
+    margin-bottom: 10px;
+}
+
+.button-section {
+    display: flex; 
+    justify-content: center; 
+    align-items: center; 
+   
+    background-color: #f9f9f9; 
+    margin: 30px;
+    gap: 20px;
+}
+
+button {
+    padding: 7px 60px;
+    border: none;
+    background: #ff6347;
+        color: var(--black);
+    cursor: pointer;
+    border-radius: 18px;
+    box-shadow: 2px 2px 8px #1c1d22;
+    
+}
+
+button:hover {
+    background-color: #ee4224;
+}
+
+
+/* Scoped styling for the ingredients-method section */
+.ingredients-method {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+    background-color: #f9f9f9;
+    border-radius: 8px;
+    gap: 20px;
+}
+
+.ingredients-method .ingredients,
+.ingredients-method .method {
+    flex: 1;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    background: #fff;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.ingredients-method h2 {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+    text-align: left;
+    color: #333;
+    text-decoration: underline;
+}
+
+/* List styling */
+.ingredients-method ul,
+.ingredients-method ol {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.ingredients-method ul li,
+.ingredients-method ol li {
+    margin-bottom: 10px;
+    font-size: 1rem;
+   
+}
+
+/* Custom checkbox styling */
+.custom-checkbox {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    cursor: pointer;
+    font-size: 1rem;
+    color: #333;
+}
+
+.custom-checkbox input[type="checkbox"] {
+    display: none;
+}
+
+.custom-checkbox .checkmark {
+    width: 15px;
+    height: 15px;
+    border: 2px solid var(--orange);
+    border-radius: 4px;
+    display: inline-block;
+    position: relative;
+    background-color: #fff;
+    transition: all 0.3s ease;
+}
+
+.custom-checkbox input[type="checkbox"]:checked + .checkmark {
+    background-color: var(--orange);
+    border-color: var(--orange);
+}
+
+.custom-checkbox .checkmark::after {
+    content: '';
+    position: absolute;
+    left: 3px;
+    top: 0;
+    width: 4px;
+    height: 9px;
+    border: solid white;
+    border-width: 0 2px 2px 0;
+    transform: rotate(45deg);
+    opacity: 0;
+    transition: all 0.3s ease;
+}
+
+.custom-checkbox input[type="checkbox"]:checked + .checkmark::after {
+    opacity: 1;
+}
+
+/* Method styling */
+.ingredients-method .method ol li {
+    background-color:#e5e5e5;
+    padding: 10px;
+    border-radius: 4px;
+    margin-bottom: 10px;
+}
+.method ol li:hover{
+    background-color: var(--orange);
+    cursor: pointer;
+}
+/* Highlight "bg-black" class (optional) */
+.ingredients-method .bg-black {
+    
+    color: rgb(30, 29, 29);
+    padding: 10px;
+    border-radius: 4px;
+}
+
+
+/* Responsive Design for Smaller Screens */
+@media (max-width: 768px) {
+   
+
+    /* Hero Section */
+    #hero2 {
+        text-align: center;
+    }
+
+    .hero2-recipe {
+        height: auto;
+    }
+
+    .recipe2 {
+        width: 100%;
+        height: auto;
+        margin: 10px auto;
+        border-radius: 8px;
+    }
+
+    .hero2-text {
+        font-size: 14px;
+        top: -60%;
+        transform: translate(0, 0);
+        margin: 0;
+       
+    }
+
+    /* Recipe Details */
+    .recipe-details {
+        margin-top: 2em;
+        padding: 15px;
+        border-radius: 10px;
+        box-shadow: 2px 2px 6px rgba(0, 0, 0, 0.1);
+        width: 100%;
+    }
+
+    .recipe-details .info {
+        margin-left: 0;
+        padding: 10px 0;
+        text-align: center;
+        line-height: 1.5;
+    }
+
+    #text {
+        font-size: 14px;
+        margin-top: 15px;
+    }
+
+    /* Ingredients and Method Section */
+    .ingredients-method {
+        flex-direction: column;
+        gap: 15px;
+        padding: 10px;
+    }
+
+    .ingredients-method .ingredients,
+    .ingredients-method .method {
+        width: 100%;
+        padding: 15px;
+        margin: 0 auto;
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    }
+
+    .ingredients-method h2 {
+        font-size: 1.2rem;
+        margin-bottom: 10px;
+    }
+
+    .ingredients-method ul li,
+    .ingredients-method ol li {
+        font-size: 0.9rem;
+        margin-bottom: 8px;
+    }
+
+    /* Buttons */
+    .button-section {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    button {
+        font-size: 0.9rem;
+        padding: 10px 20px;
+        width: 100%;
+        max-width: 300px;
+        margin: 0 auto;
+    }
+
+    /* Modal */
+    .modal {
+        width: 90%;
+        padding: 15px;
+    }
+
+    .modal-content textarea {
+        height: 80px;
+    }
+
+    /* Custom Checkbox */
+    .custom-checkbox {
+        font-size: 0.9rem;
+    }
+
+    .custom-checkbox .checkmark {
+        width: 12px;
+        height: 12px;
+    }
+
+    /* Method Styling */
+    .ingredients-method .method ol li {
+        padding: 8px;
+        font-size: 0.9rem;
+        border-radius: 6px;
+    }
+}

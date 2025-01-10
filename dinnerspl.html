@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cooking Recipe Website</title>
+   <link rel="stylesheet" href="styles/main.css">
+ <link rel="stylesheet" href="styles/dinnerspl.css">
+   <link rel="stylesheet" href="styles/footer.css">
+
+
+</head>
+<body>
+    <header class="navbar">
+        <div class="logo">
+            <a href="index.html">Recipe Hub</a>
+        </div>
+        <div class="hamburger" onclick="toggleMenu()">
+            <span></span>
+            <span></span>
+            <span></span>
+          </div>
+        <nav>
+            <ul class="nav-links">
+             
+                <li><a href="all-recipes.html">Recipes</a></li>
+                <li><a href="InstantPot.html">Instant Pot</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="about.html">About us</a></li>
+            </ul>
+        </nav>
+
+    </header>
+    <section id="hero2">
+        <div class="hero2-recipe">
+            <img src="images/dinner/kadhi-pakora.jpg" alt="sandwich" class="recipe2">
+        
+        <div class="hero2-text">
+            <h1>Enjoy  Kadhi Pakora – The Ultimate Anytime Comfort Food!</h1>
+        </div>
+        </div>
+    </section>
+
+        <!-- Recipe Details -->
+        <section class="recipe-details">
+            <div class="info">
+                <p><strong>Cuisine:</strong> North India</p>
+                <p><strong>Prep Time:</strong>   20 mins</p>
+                <p><strong>Cook Time:</strong>  60 mins</p>
+                <p><strong>Total Time:</strong>  80 mins</p>
+                <p id="text">A classic comfort food  - Kadhi Pakora</p>
+            </div>
+            
+        </section>
+    
+      
+    <section class="button-section">
+        <button id="reviewBtn">Review</button>
+        <button id="printBtn">Print</button>
+        <button id="saveBtn">Save</button>
+    </section>
+    
+<!-- Modal Popup for Review -->
+<div id="reviewModal" class="modal" style="display: none;">
+    <div class="modal-content">
+        <textarea id="reviewText" placeholder="Write your review..."></textarea>
+        <button id="submitReview">Submit</button>
+        <button id="closeModal">Close</button>
+    </div>
+</div>
+
+
+    <!-- Ingredients and Method -->
+    <section class="ingredients-method">
+        <div class="ingredients">
+            <h2>Ingredients</h2>
+            <ul>
+                <li>
+                    <label class="custom-checkbox">
+                        <input type="checkbox">
+                        <span class="checkmark"></span>
+                  
+                  
+
+                    </label>
+                </li>
+    
+                
+                <li>
+                    <label class="custom-checkbox">
+                        <input type="checkbox"> <span class="checkmark"></span>
+                       
+                    </label>
+                    </li>
+                <li>
+                    <label class="custom-checkbox">
+                        <input type="checkbox">
+                         <span class="checkmark"></span>
+                        
+                       
+
+                        </label>
+                    </li>
+                <li>
+                    <label class="custom-checkbox">
+                        <input type="checkbox"> 
+                        <span class="checkmark"></span> 
+                       
+
+
+                    </label>
+                </li>
+                <li><label class="custom-checkbox"><input type="checkbox"> <span class="checkmark"></span> 
+
+
+
+                </label></li>
+                <li><label class="custom-checkbox"><input type="checkbox"> <span class="checkmark"></span> </label></li>
+                <li><label class="custom-checkbox"><input type="checkbox"> <span class="checkmark"></span> </label></li>
+                <li><label class="custom-checkbox"><input type="checkbox"> <span class="checkmark"></span></label></li>
+                <li><label class="custom-checkbox"><input type="checkbox"> <span class="checkmark"></span></label></li>
+                <li><label class="custom-checkbox"><input type="checkbox"> <span class="checkmark"></span> </label></li>
+                <li><label class="custom-checkbox"><input type="checkbox"> <span class="checkmark"></span> </label></li>
+                <li><label class="custom-checkbox"><input type="checkbox"> <span class="checkmark"></span>  </label></li>
+                <li><label class="custom-checkbox"><input type="checkbox"> <span class="checkmark"></span> </label></li>
+                <li><label class="custom-checkbox"><input type="checkbox"> <span class="checkmark"></span>
+
+                </label></li>
+                <li><label class="custom-checkbox"><input type="checkbox"> <span class="checkmark"></span>
+                </label></li>
+                <li><label class="custom-checkbox"><input type="checkbox"> <span class="checkmark"></span> 
+
+                </label></li>
+                <li><label class="custom-checkbox"><input type="checkbox"> <span class="checkmark"></span></label></li>
+                <li><label class="custom-checkbox"><input type="checkbox"> <span class="checkmark"> </span> 
+                   
+
+                </label></li>
+                <li><label class="custom-checkbox"><input type="checkbox"> <span class="checkmark"> </span> 
+                  </label></li>
+                <li><label class="custom-checkbox"><input type="checkbox"> <span class="checkmark"></span> 
+                 
+                </label></li>
+                 <li><label class="custom-checkbox"><input type="checkbox"> <span class="checkmark"></span>     </label></li>
+                <li><label class="custom-checkbox"><input type="checkbox">  <span class="checkmark"></span> 
+                  
+                  </label></li>
+               
+            </ul>
+        </div>
+        <div class="method">
+            <h2>Method</h2>
+            <ol>
+                <li class="bg-black">
+                </li>
+                <li class="bg-black">
+
+
+                </li>
+                <li class="bg-black"></li>
+
+
+                
+                <li class="bg-black">
+
+
+                </li>
+                <li class="bg-black">
+                </li>
+                <li class="bg-black">
+                </li>
+                <li class="bg-black">
+                    
+
+
+                    </li>
+               
+                <li class="bg-black">
+
+                <li class="bg-black">
+
+
+                    
+                </li>
+                <li class="bg-black">
+
+
+                    
+                </li>
+                <li class="bg-black">
+
+
+                   
+                    </li>
+                <li class="bg-black">
+
+
+                </li>
+                <li class="bg-black">
+
+
+
+
+
+                </li>
+                <li class="bg-black">
+
+
+                </li>
+                <li class="bg-black">
+
+                    
+                </li>
+               <li class="bg-black">
+
+
+            </li>
+                <li class="bg-black">
+                </li>
+                <li class="bg-black">
+
+
+                    </li>
+                    <li class="bg-black"></li>
+            </ol>
+        </div>
+    </section>
+    <footer>
+        <div class="footer-container">
+          <div class="footer-links">
+            <a href="#home">Home</a>
+            <a href="#breakfast">Breakfast</a>
+            <a href="#lunch">Lunch</a>
+            <a href="#dinner">Dinner</a>
+            <a href="#desserts">Desserts</a>
+            <a href="#contact">Contact Us</a>
+          </div>
+      
+          <div class="newsletter">
+            <p>Subscribe to our newsletter for the latest recipes!</p>
+            <form onsubmit="showThankYou(event)">
+              <input type="email" placeholder="Enter your email" required>
+              <button type="submit">Subscribe</button>
+            </form>
+            <p id="thank-you-message" style="display: none; color: green;">Thank you for subscribing!</p>
+          </div>
+      
+          <p>&copy; 2024 Your Recipe Website. All Rights Reserved.</p>
+          <button class="back-to-top" onclick="scrollToTop()">Back to Top</button>
+        </div>
+      </footer>
+      
+<script src="scripts/main.js"></script>
+<script src="scripts/bfrecipe1.js"></script>
+<script src="scripts/footer.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,438 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cooking Recipe Website</title>
+   <link rel="stylesheet" href="styles/main.css">
+ <link rel="stylesheet" href="styles/lunchrecipe7.css">
+   <link rel="stylesheet" href="styles/footer.css">
+
+
+</head>
+<body>
+    <header class="navbar">
+        <div class="logo">
+            <a href="index.html">Recipe Hub</a>
+        </div>
+        <div class="hamburger" onclick="toggleMenu()">
+            <span></span>
+            <span></span>
+            <span></span>
+          </div>
+        <nav>
+            <ul class="nav-links">
+             
+                <li><a href="all-recipes.html">Recipes</a></li>
+                <li><a href="InstantPot.html">Instant Pot</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="about.html">About us</a></li>
+            </ul>
+        </nav>
+
+    </header>
+    <section id="hero2">
+        <div class="hero2-recipe">
+            <img src="images/lunch/tadka-dal.jpg" alt="sandwich" class="recipe2">
+        
+        <div class="hero2-text">
+            <h1>Enjoy  Dal Tadka – The Ultimate Anytime Comfort Food!</h1>
+        </div>
+        </div>
+    </section>
+
+        <!-- Recipe Details -->
+        <section class="recipe-details">
+            <div class="info">
+                <p><strong>Cuisine:</strong> North India</p>
+                <p><strong>Prep Time:</strong>  10 mins</p>
+                <p><strong>Cook Time:</strong>  15 mins</p>
+                <p><strong>Total Time:</strong>  25 mins</p>
+                <p id="text">A classic comfort food  - Dal Tadka</p>
+            </div>
+            
+        </section>
+    
+      
+    <section class="button-section">
+        <button id="reviewBtn">Review</button>
+        <button id="printBtn">Print</button>
+        <button id="saveBtn">Save</button>
+    </section>
+    
+<!-- Modal Popup for Review -->
+<div id="reviewModal" class="modal" style="display: none;">
+    <div class="modal-content">
+        <textarea id="reviewText" placeholder="Write your review..."></textarea>
+        <button id="submitReview">Submit</button>
+        <button id="closeModal">Close</button>
+    </div>
+</div>
+
+
+    <!-- Ingredients and Method -->
+    <section class="ingredients-method">
+        <div class="ingredients">
+            <h2>Ingredients</h2>
+            <ul>
+                <li>
+                    <label class="custom-checkbox">
+                        <input type="checkbox">
+                        <span class="checkmark"></span>
+    
+                        1 cup toor dal
+
+
+                    </label>
+                </li>
+    
+                
+                <li>
+                    <label class="custom-checkbox">
+                        <input type="checkbox"> <span class="checkmark"></span>
+                       
+                        ½ cup moong dal
+
+                    </label>
+                    </li>
+                <li>
+                    <label class="custom-checkbox">
+                        <input type="checkbox">
+                         <span class="checkmark"></span>
+                       
+                         2 tomato
+          
+                        </label>
+                    </li>
+                <li>
+                    <label class="custom-checkbox">
+                        <input type="checkbox"> 
+                        <span class="checkmark"></span> 
+                        
+                        1 onion, cubed
+
+
+                    </label>
+                </li>
+                <li><label class="custom-checkbox"><input type="checkbox"> <span class="checkmark"></span> 
+
+                    
+                    10 cloves garlic
+
+
+                </label></li>
+                <li><label class="custom-checkbox"><input type="checkbox"> <span class="checkmark"></span> 1 bay leaf
+                </label></li>
+                <li><label class="custom-checkbox"><input type="checkbox"> <span class="checkmark"></span>1 black cardamom
+                </label></li>
+                <li><label class="custom-checkbox"><input type="checkbox"> <span class="checkmark"></span>½ tsp turmeric
+                </label></li>
+                <li><label class="custom-checkbox"><input type="checkbox"> <span class="checkmark"></span>1 tsp salt,2 tsp ghee
+
+                    
+                </label></li>
+                <li><label class="custom-checkbox"><input type="checkbox"> <span class="checkmark"></span> 4 cup water
+                </label></li>
+                <li><label class="custom-checkbox"><input type="checkbox"> <span class="checkmark"></span> For tempering: 2 tbsp ghee
+
+
+
+                </label></li>
+                <li><label class="custom-checkbox"><input type="checkbox"> <span class="checkmark"></span>4 cloves garlic, sliced
+                    1 tsp cumin
+                    </label></li>
+                <li><label class="custom-checkbox"><input type="checkbox"> <span class="checkmark"> </span> 
+                   
+                    2 tsp kasuri methi
+                    , 1 tsp chilli powder
+                </label></li>
+                <li><label class="custom-checkbox"><input type="checkbox"> <span class="checkmark"> </span> 
+                     2 tbsp coriander, chopped
+                    
+
+                </label></li>
+
+                
+            </ul>
+        </div>
+        <div class="method">
+            <h2>Method</h2>
+            <ol>
+                <li class="bg-black">firstly, in a pressure cooker take 1 cup toor dal and ½ cup moong dal. make sure to rinse the dal well.
+                </li>
+                <li class="bg-black">
+                    add 2 tomato, 1 onion, 10 cloves garlic, 1 bay leaf, 1 black cardamom, ½ tsp turmeric, and 1 tsp salt.
+
+                    </li>
+               
+                <li class="bg-black">also, add 2 tsp ghee and 4 cup water.
+                </li>
+
+                <li class="bg-black">
+                    cover and pressure cook for 5 whistles or until the dal is cooked well.
+
+
+                </li>
+                <li class="bg-black">
+                    mash the dal slightly and adjust consistency as required.
+
+                </li>
+                <li class="bg-black">
+
+                    to prepare the tempering, heat 2 tbsp ghee.
+
+                    </li>
+                <li class="bg-black">add 4 cloves garlic and fry for a minute.
+
+                </li>
+                <li class="bg-black">also add 1 tsp cumin, 2 tsp kasuri methi, 1 tsp chilli powder, pinch hing.
+                </li>
+                <li class="bg-black">splutter the tempering and pour over the dal.
+
+                </li>
+                <li class="bg-black">
+                    add in 2 tbsp coriander and mix well.
+
+                    
+                </li>
+               <li class="bg-black">finally, enjoy cooker dal tadka with jeera rice.
+
+            </li>
+               
+              
+            </ol>
+        </div>
+    </section>
+    <footer>
+        <div class="footer-container">
+          <div class="footer-links">
+            <a href="#home">Home</a>
+            <a href="#breakfast">Breakfast</a>
+            <a href="#lunch">Lunch</a>
+            <a href="#dinner">Dinner</a>
+            <a href="#desserts">Desserts</a>
+            <a href="#contact">Contact Us</a>
+          </div>
+      
+          <div class="newsletter">
+            <p>Subscribe to our newsletter for the latest recipes!</p>
+            <form onsubmit="showThankYou(event)">
+              <input type="email" placeholder="Enter your email" required>
+              <button type="submit">Subscribe</button>
+            </form>
+            <p id="thank-you-message" style="display: none; color: green;">Thank you for subscribing!</p>
+          </div>
+      
+          <p>&copy; 2024 Your Recipe Website. All Rights Reserved.</p>
+          <button class="back-to-top" onclick="scrollToTop()">Back to Top</button>
+        </div>
+      </footer>
+      
+<script src="scripts/main.js"></script>
+<script src="scripts/bfrecipe1.js"></script>
+<script src="scripts/footer.js"></script>
+
+</body>
+</html><!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cooking Recipe Website</title>
+   <link rel="stylesheet" href="styles/main.css">
+ <link rel="stylesheet" href="styles/lunchrecipe2.css">
+   <link rel="stylesheet" href="styles/footer.css">
+
+
+</head>
+<body>
+    <header class="navbar">
+        <div class="logo">
+            <a href="index.html">Recipe Hub</a>
+        </div>
+        <div class="hamburger" onclick="toggleMenu()">
+            <span></span>
+            <span></span>
+            <span></span>
+          </div>
+        <nav>
+            <ul class="nav-links">
+             
+                <li><a href="all-recipes.html">Recipes</a></li>
+                <li><a href="InstantPot.html">Instant Pot</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="about.html">About us</a></li>
+            </ul>
+        </nav>
+
+    </header>
+    <section id="hero2">
+        <div class="hero2-recipe">
+            <img src="images/lunch/paneer-bhurji.jpg" alt="sandwich" class="recipe2">
+        
+        <div class="hero2-text">
+            <h1>Enjoy  paneer bhurji – The Ultimate Anytime Comfort Food!</h1>
+        </div>
+        </div>
+    </section>
+
+        <!-- Recipe Details -->
+        <section class="recipe-details">
+            <div class="info">
+                <p><strong>Cuisine:</strong> North India</p>
+                <p><strong>Prep Time:</strong>  10 mins</p>
+                <p><strong>Cook Time:</strong>  15 mins</p>
+                <p><strong>Total Time:</strong>  25 mins</p>
+                <p id="text">A classic comfort food  - Paneer bhurji</p>
+            </div>
+            
+        </section>
+    
+      
+    <section class="button-section">
+        <button id="reviewBtn">Review</button>
+        <button id="printBtn">Print</button>
+        <button id="saveBtn">Save</button>
+    </section>
+    
+<!-- Modal Popup for Review -->
+<div id="reviewModal" class="modal" style="display: none;">
+    <div class="modal-content">
+        <textarea id="reviewText" placeholder="Write your review..."></textarea>
+        <button id="submitReview">Submit</button>
+        <button id="closeModal">Close</button>
+    </div>
+</div>
+
+
+    <!-- Ingredients and Method -->
+    <section class="ingredients-method">
+        <div class="ingredients">
+            <h2>Ingredients</h2>
+            <ul>
+                <li><label class="custom-checkbox"><input type="checkbox"> <span class="checkmark"></span>
+                </label>
+                </li>
+    
+                
+                <li>
+                    <label class="custom-checkbox">
+                        <input type="checkbox"> <span class="checkmark"></span>
+                       
+
+                    </label>
+                    </li>
+                <li>
+                    <label class="custom-checkbox">
+                        <input type="checkbox">
+                         <span class="checkmark"></span>
+
+          
+                        </label>
+                    </li>
+                <li>
+                    <label class="custom-checkbox">
+                        <input type="checkbox"> 
+                        <span class="checkmark"></span> 
+                        
+
+                    </label>
+                </li>
+                <li><label class="custom-checkbox"><input type="checkbox"> <span class="checkmark"></span> 
+
+
+
+                </label></li>
+                <li><label class="custom-checkbox"><input type="checkbox"> <span class="checkmark"></span>  </label></li>
+                <li><label class="custom-checkbox"><input type="checkbox"> <span class="checkmark"></span> </label></li>
+                <li><label class="custom-checkbox"><input type="checkbox"> <span class="checkmark"></span> </label></li>
+                <li><label class="custom-checkbox"><input type="checkbox"> <span class="checkmark"></span>
+                   
+                </label></li>
+                <li><label class="custom-checkbox"><input type="checkbox"> <span class="checkmark"></span> 
+                </label></li>
+                <li><label class="custom-checkbox"><input type="checkbox"> <span class="checkmark"></span>
+
+                </label></li>
+                <li><label class="custom-checkbox"><input type="checkbox"> <span class="checkmark"></span></label></li>
+                <li><label class="custom-checkbox"><input type="checkbox"> <span class="checkmark"> </span> 
+
+                   
+
+                </label></li>
+                
+            </ul>
+        </div>
+        <div class="method">
+            <h2>Method</h2>
+            <ol>
+                <li class="bg-black">
+                </li>
+                <li class="bg-black">
+                    
+                    </li>
+               
+                <li class="bg-black"></li>
+
+                <li class="bg-black">
+                    
+
+                </li>
+                <li class="bg-black">
+                    
+                </li>
+                <li class="bg-black">
+
+                    </li>
+                <li class="bg-black">
+                </li>
+                <li class="bg-black">
+
+                </li>
+                <li class="bg-black">
+
+                </li>
+                <li class="bg-black">
+
+                    
+                </li>
+               <li class="bg-black">
+            </li>
+                <li class="bg-black">
+
+                </li>
+              
+            </ol>
+        </div>
+    </section>
+    <footer>
+        <div class="footer-container">
+          <div class="footer-links">
+            <a href="#home">Home</a>
+            <a href="#breakfast">Breakfast</a>
+            <a href="#lunch">Lunch</a>
+            <a href="#dinner">Dinner</a>
+            <a href="#desserts">Desserts</a>
+            <a href="#contact">Contact Us</a>
+          </div>
+      
+          <div class="newsletter">
+            <p>Subscribe to our newsletter for the latest recipes!</p>
+            <form onsubmit="showThankYou(event)">
+              <input type="email" placeholder="Enter your email" required>
+              <button type="submit">Subscribe</button>
+            </form>
+            <p id="thank-you-message" style="display: none; color: green;">Thank you for subscribing!</p>
+          </div>
+      
+          <p>&copy; 2024 Your Recipe Website. All Rights Reserved.</p>
+          <button class="back-to-top" onclick="scrollToTop()">Back to Top</button>
+        </div>
+      </footer>
+      
+<script src="scripts/main.js"></script>
+<script src="scripts/bfrecipe1.js"></script>
+<script src="scripts/footer.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cooking Recipe Website</title>
+   <link rel="stylesheet" href="styles/main.css">
+ <link rel="stylesheet" href="styles/lunchrecipe8.css">
+   <link rel="stylesheet" href="styles/footer.css">
+
+
+</head>
+<body>
+    <header class="navbar">
+        <div class="logo">
+            <a href="index.html">Recipe Hub</a>
+        </div>
+        <div class="hamburger" onclick="toggleMenu()">
+            <span></span>
+            <span></span>
+            <span></span>
+          </div>
+        <nav>
+            <ul class="nav-links">
+             
+                <li><a href="all-recipes.html">Recipes</a></li>
+                <li><a href="InstantPot.html">Instant Pot</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="about.html">About us</a></li>
+            </ul>
+        </nav>
+
+    </header>
+    <section id="hero2">
+        <div class="hero2-recipe">
+            <img src="images/lunch/chicken curry.jpg" alt="sandwich" class="recipe2">
+        
+        <div class="hero2-text">
+            <h1>Enjoy  chicken curry – The Ultimate Anytime Comfort Food!</h1>
+        </div>
+        </div>
+    </section>
+
+        <!-- Recipe Details -->
+        <section class="recipe-details">
+            <div class="info">
+                <p><strong>Cuisine:</strong> North India</p>
+                <p><strong>Prep Time:</strong>  10 mins</p>
+                <p><strong>Cook Time:</strong>  15 mins</p>
+                <p><strong>Total Time:</strong>  25 mins</p>
+                <p id="text">A classic comfort food  - chicken curry</p>
+            </div>
+            
+        </section>
+    
+      
+    <section class="button-section">
+        <button id="reviewBtn">Review</button>
+        <button id="printBtn">Print</button>
+        <button id="saveBtn">Save</button>
+    </section>
+    
+<!-- Modal Popup for Review -->
+<div id="reviewModal" class="modal" style="display: none;">
+    <div class="modal-content">
+        <textarea id="reviewText" placeholder="Write your review..."></textarea>
+        <button id="submitReview">Submit</button>
+        <button id="closeModal">Close</button>
+    </div>
+</div>
+
+
+    <!-- Ingredients and Method -->
+    <section class="ingredients-method">
+        <div class="ingredients">
+            <h2>Ingredients</h2>
+            <ul>
+                <li>
+                    <label class="custom-checkbox">
+                        <input type="checkbox">
+                        <span class="checkmark"></span>
+    
+                        ½ kg  chicken(bone-in/boneless)
+
+                    </label>
+                </li>
+    
+                
+                <li>
+                    <label class="custom-checkbox">
+                        <input type="checkbox"> <span class="checkmark"></span>
+                       2-3 tbsp oil
+
+                    </label>
+                    </li>
+                <li>
+                    <label class="custom-checkbox">
+                        <input type="checkbox">
+                         <span class="checkmark"></span>
+                        1 cup 3 medium onions
+
+          
+                        </label>
+                    </li>
+                <li>
+                    <label class="custom-checkbox">
+                        <input type="checkbox"> 
+                        <span class="checkmark"></span> 
+                        1 to 2 green chillies
+
+
+                    </label>
+                </li>
+                <li><label class="custom-checkbox"><input type="checkbox"> <span class="checkmark"></span> 
+
+                    1 tbsp ginger  garlic paste 
+
+
+                </label></li>
+                <li><label class="custom-checkbox"><input type="checkbox"> <span class="checkmark"></span>½ cup medium tomatoes</label></li>
+                <li><label class="custom-checkbox"><input type="checkbox"> <span class="checkmark"></span> ¼ cup yogurt</label></li>
+                <li><label class="custom-checkbox"><input type="checkbox"> <span class="checkmark"></span> salt according to taste</label></li>
+                <li><label class="custom-checkbox"><input type="checkbox"> <span class="checkmark"></span>
+                   1 cup hot water
+                </label></li>
+                <li><label class="custom-checkbox"><input type="checkbox"> <span class="checkmark"></span>For spice powder: ¼  tsp turmeric powder
+                </label></li>
+                <li><label class="custom-checkbox"><input type="checkbox"> <span class="checkmark"></span> 1 tsp kashmiri red chili powder
+
+                </label></li>
+                <li><label class="custom-checkbox"><input type="checkbox"> <span class="checkmark"></span>1 tsp garam masala </label></li>
+                <li><label class="custom-checkbox"><input type="checkbox"> <span class="checkmark"> </span> 1 tsp coriander powder
+
+                   
+
+                </label></li>
+                
+            </ul>
+        </div>
+        <div class="method">
+            <h2>Method</h2>
+            <ol>
+                <li class="bg-black">On a medium flame, heat oil in a deep pan. Add the whole spices - bay leaf.cinnamon, cloves & green cardamoms.
+                </li>
+                <li class="bg-black">Stir in the chopped onions and chillies .Saute until deep golden in color, for 7 to 8 mins.
+                    
+                    </li>
+               
+                <li class="bg-black">Add ginger garlic paste and saute till you get a nice aroma, for about a minute.</li>
+
+                <li class="bg-black">
+                   Then add tomatoes, turmeric and salt.Mix well & cook until the tomatoes turn soft & mushy. 
+
+                </li>
+                <li class="bg-black">
+                    Turn down the heat to low ,stir in the yogurt , red chilli powder,garam masala & coriander powder.
+                </li>
+                <li class="bg-black">
+                    
+                    Cook on low heat, until the mixture smells aromatic.
+                    </li>
+                <li class="bg-black">
+                    Add chicken and coriander leaves . fry on a medium heat till the chicken turns white or pale in color. this takes around 3 mins.
+                </li>
+                <li class="bg-black">
+Cover and cook on a low heat for 3 to 4 minutes. This step is very important as the chicken absorbs all the flavours of the spices.
+                </li>
+                <li class="bg-black">
+                    Meanwhile in a separate pot, heat up 1 cup water. 
+                </li>
+                <li class="bg-black">
+                   For chicken curry:  Pour hot water just enough to make a thick gravy. 
+                    
+                </li>
+               <li class="bg-black">
+                Cover and cook on a medium flame till the chicken is soft cooked and the curry turns thick.
+            </li>
+                <li class="bg-black">
+Lastly garnish with coriander leaves . Finally , serve chicken curry with butter naan/ jeera rice.
+                </li>
+               
+              
+            </ol>
+        </div>
+    </section>
+    <footer>
+        <div class="footer-container">
+          <div class="footer-links">
+            <a href="#home">Home</a>
+            <a href="#breakfast">Breakfast</a>
+            <a href="#lunch">Lunch</a>
+            <a href="#dinner">Dinner</a>
+            <a href="#desserts">Desserts</a>
+            <a href="#contact">Contact Us</a>
+          </div>
+      
+          <div class="newsletter">
+            <p>Subscribe to our newsletter for the latest recipes!</p>
+            <form onsubmit="showThankYou(event)">
+              <input type="email" placeholder="Enter your email" required>
+              <button type="submit">Subscribe</button>
+            </form>
+            <p id="thank-you-message" style="display: none; color: green;">Thank you for subscribing!</p>
+          </div>
+      
+          <p>&copy; 2024 Your Recipe Website. All Rights Reserved.</p>
+          <button class="back-to-top" onclick="scrollToTop()">Back to Top</button>
+        </div>
+      </footer>
+      
+<script src="scripts/main.js"></script>
+<script src="scripts/bfrecipe1.js"></script>
+<script src="scripts/footer.js"></script>
+
+</body>
+</html>

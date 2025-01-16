@@ -1,0 +1,195 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cooking Recipe Website</title>
+   <link rel="stylesheet" href="styles/main.css">
+ <link rel="stylesheet" href="styles/dessertrecipe7.css">
+   <link rel="stylesheet" href="styles/footer.css">
+
+
+</head>
+<body>
+    <header class="navbar">
+        <div class="logo">
+            <a href="index.html">Recipe Hub</a>
+        </div>
+        <div class="hamburger" onclick="toggleMenu()">
+            <span></span>
+            <span></span>
+            <span></span>
+          </div>
+        <nav>
+            <ul class="nav-links">
+             
+                <li><a href="all-recipes.html">Recipes</a></li>
+                <li><a href="InstantPot.html">Quick & Easy</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="about.html">About us</a></li>
+            </ul>
+        </nav>
+
+    </header>
+    <section id="hero2">
+        <div class="hero2-recipe">
+            <img src="images/desserts/kulfi.jpg" alt="sandwich" class="recipe2">
+        
+        <div class="hero2-text">
+            <h1> Nothing beats the taste of homemade Kulfi</h1>
+        </div>
+        </div>
+    </section>
+
+        <!-- Recipe Details -->
+        <section class="recipe-details">
+            <div class="info">
+                <p><strong>Cuisine:</strong> North India</p>
+                <p><strong>Prep Time:</strong>  20 mins</p>
+                <p><strong>cook Time:</strong>  30 miins</p>
+                <p><strong>Total Time:</strong>  35 mins</p>
+                <p id="text">Flavors Folded to Perfection – Kulfi Delight.</p>
+            </div>
+            
+        </section>
+    
+      
+    <section class="button-section">
+        <button id="reviewBtn">Review</button>
+        <button id="printBtn">Print</button>
+        <button id="saveBtn">Save</button>
+    </section>
+    
+<!-- Modal Popup for Review -->
+<div id="reviewModal" class="modal" style="display: none;">
+    <div class="modal-content">
+        <textarea id="reviewText" placeholder="Write your review..."></textarea>
+        <button id="submitReview">Submit</button>
+        <button id="closeModal">Close</button>
+    </div>
+</div>
+
+
+    <!-- Ingredients and Method -->
+    <section class="ingredients-method">
+        <div class="ingredients">
+            <h2>Ingredients</h2>
+            <ul>
+                <li>
+                    <label class="custom-checkbox">
+                        <input type="checkbox">
+                        <span class="checkmark"></span>
+                        3 cups whole milk
+
+
+
+
+                    </label>
+                </li>
+    
+                
+                <li>
+                    <label class="custom-checkbox">
+                        <input type="checkbox"> <span class="checkmark"></span> 75 to 80 grams Mawa
+
+                    </label>
+                    </li>
+                <li>
+                    <label class="custom-checkbox">
+                        <input type="checkbox">
+                         <span class="checkmark"></span>
+                       
+                         sugar as required
+                        </label>
+                    </li>
+                <li>
+                    <label class="custom-checkbox">
+                        <input type="checkbox"> 
+                        <span class="checkmark"></span> 
+                        1 tbsp cornstarch
+
+
+                      
+                    </label>
+                </li>
+                <li><label class="custom-checkbox"><input type="checkbox"> <span class="checkmark"></span> 3 tbsp milk
+
+
+
+                </label></li>
+                <li><label class="custom-checkbox"><input type="checkbox"> <span class="checkmark"></span>20 pistachios</label></li>
+                <li><label class="custom-checkbox"><input type="checkbox"> <span class="checkmark"></span> 20 almonds</label></li>
+                <li><label class="custom-checkbox"><input type="checkbox"> <span class="checkmark"></span>½ tsp cardamom powder</label></li>
+                <li><label class="custom-checkbox"><input type="checkbox"> <span class="checkmark"></span>1 tsp rose water </label></li>
+                <li><label class="custom-checkbox"><input type="checkbox"> <span class="checkmark"></span> 25 to 30 saffron strands
+
+                </label></li>
+
+
+            </ul>
+        </div>
+        <div class="method">
+            <h2>Method</h2>
+            <ol>
+                <li class="bg-black">In a wide pan heat milk on a sim or low flame for at least about 18 to 20 mins. The milk will reduce and thicken in this period of time. Keep on stirring the milk often as it simmers so that it does not burn from the bottom in the pan.</li>
+                <li class="bg-black">Grate the khoya or crumble it very well to a fine texture. Set aside. Crush the pistachios and almonds to a semi fine consistency in a dry grinder or in a mortar-pestle. Keep both of them aside.
+                </li>
+                <li class="bg-black">Crush the green cardamom pods in a mortar-pestle and powder finely. Discard the husks.
+                </li>
+                <li class="bg-black">Dissolve the  cornstarch in 3 tablespoons of milk. Mix very well. Set aside.
+                </li>
+                <li class="bg-black">After 18 to 20 minutes of the milk simmering, add the sugar and stir.</li>
+                <li class="bg-black">Let the sugar dissolve and after 3 to 4 mins, add the rice flour paste or cornstarch paste.
+                </li>
+                <li class="bg-black">Keep on stirring after adding the paste, so that no lumps are formed.
+
+                    
+                    </li>
+                <li class="bg-black">The whole mixture has to be lump free, so keep on stirring.
+                </li>
+                <li class="bg-black">After 4 to 5 mins, when the mixture has thickened, add the khoya (mawa), powdered almonds and pistachios together with the cardamom powder.
+                </li>
+                <li class="bg-black">Stir very well and just simmer for a minute or two on a low heat. Keep on stirring so that the khoya (mawa) is distributed evenly.
+
+                </li>
+                <li class="bg-black">Add rose water or kewra water and crushed saffron.
+                </li>
+               <li class="bg-black">Then pour the mixture in kulfi moulds.Freeze the kulfi overnight or for a day. Once the kulfi is well set and frozen, remove it by sliding a butter knife at the edges.
+            </li>
+                <li class="bg-black">Remove on a glass plate or wooden tray. Slice the kulfi and serve immediately</li>
+                
+            </ol>
+        </div>
+    </section>
+    <footer>
+        <div class="footer-container">
+          <div class="footer-links">
+            <a href="#home">Home</a>
+            <a href="#breakfast">Breakfast</a>
+            <a href="#lunch">Lunch</a>
+            <a href="#dinner">Dinner</a>
+            <a href="#desserts">Desserts</a>
+            <a href="#contact">Contact Us</a>
+          </div>
+      
+          <div class="newsletter">
+            <p>Subscribe to our newsletter for the latest recipes!</p>
+            <form onsubmit="showThankYou(event)">
+              <input type="email" placeholder="Enter your email" required>
+              <button type="submit">Subscribe</button>
+            </form>
+            <p id="thank-you-message" style="display: none; color: green;">Thank you for subscribing!</p>
+          </div>
+      
+          <p>&copy; 2024 Your Recipe Website. All Rights Reserved.</p>
+          <button class="back-to-top" onclick="scrollToTop()">Back to Top</button>
+        </div>
+      </footer>
+      
+<script src="scripts/main.js"></script>
+<script src="scripts/bfrecipe1.js"></script>
+<script src="scripts/footer.js"></script>
+
+</body>
+</html>

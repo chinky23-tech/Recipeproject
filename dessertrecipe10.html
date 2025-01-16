@@ -1,0 +1,194 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cooking Recipe Website</title>
+   <link rel="stylesheet" href="styles/main.css">
+ <link rel="stylesheet" href="styles/dessertrecipe10.css">
+   <link rel="stylesheet" href="styles/footer.css">
+
+
+</head>
+<body>
+    <header class="navbar">
+        <div class="logo">
+            <a href="index.html">Recipe Hub</a>
+        </div>
+        <div class="hamburger" onclick="toggleMenu()">
+            <span></span>
+            <span></span>
+            <span></span>
+          </div>
+        <nav>
+            <ul class="nav-links">
+             
+                <li><a href="all-recipes.html">Recipes</a></li>
+                <li><a href="InstantPot.html">Quick & Easy</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="about.html">About us</a></li>
+            </ul>
+        </nav>
+
+    </header>
+    <section id="hero2">
+        <div class="hero2-recipe">
+            <img src="images/desserts/rasmalai.jpg" alt="sandwich" class="recipe2">
+        
+        <div class="hero2-text">
+            <h1>Nothing beats the taste of homemade Rasmalai</h1>
+        </div>
+        </div>
+    </section>
+
+        <!-- Recipe Details -->
+        <section class="recipe-details">
+            <div class="info">
+                <p><strong>Cuisine:</strong> North India</p>
+                <p><strong>Prep Time:</strong>  10 mins</p>
+                <p><strong>Cook Time:</strong>  20 mins</p>
+                <p><strong>Total Time:</strong>  30 mins</p>
+                <p id="text">Flavors Folded to Perfection – Rasmalai Delight.</p>
+            </div>
+            
+        </section>
+    
+      
+    <section class="button-section">
+        <button id="reviewBtn">Review</button>
+        <button id="printBtn">Print</button>
+        <button id="saveBtn">Save</button>
+    </section>
+    
+<!-- Modal Popup for Review -->
+<div id="reviewModal" class="modal" style="display: none;">
+    <div class="modal-content">
+        <textarea id="reviewText" placeholder="Write your review..."></textarea>
+        <button id="submitReview">Submit</button>
+        <button id="closeModal">Close</button>
+    </div>
+</div>
+
+
+    <!-- Ingredients and Method -->
+    <section class="ingredients-method">
+        <div class="ingredients">
+            <h2>Ingredients</h2>
+            <ul>
+                <li>
+                    <label class="custom-checkbox">
+                        <input type="checkbox">
+                        <span class="checkmark"></span>
+                        Milk Mixture
+
+                    </label>
+                </li>
+                <li>
+                    <label class="custom-checkbox">
+                        <input type="checkbox">
+                        <span class="checkmark"></span>
+                        3-3.5 cups whole milk
+
+                    </label>
+                </li>
+    
+                
+                <li>
+                    <label class="custom-checkbox">
+                        <input type="checkbox"> <span class="checkmark"></span>⅓ cup sugar </label>
+                    </li>
+                <li>
+                    <label class="custom-checkbox">
+                        <input type="checkbox">
+                         <span class="checkmark"></span>
+                         ⅛ tsp salt
+
+
+                        </label>
+                    </li>
+                <li>
+                    <label class="custom-checkbox">
+                        <input type="checkbox"> 
+                        <span class="checkmark"></span> 
+                        5-6 cardamom pods
+                      
+                    </label>
+                </li>
+                <li><label class="custom-checkbox"><input type="checkbox"> <span class="checkmark"></span> 1 tbsp slivered pitachios
+
+                </label></li>
+                <li><label class="custom-checkbox"><input type="checkbox"> <span class="checkmark"></span>Rasmalai Pedas:</label></li>
+                <li><label class="custom-checkbox"><input type="checkbox"> <span class="checkmark"></span>1 cup full fat milk powder </label></li>
+                <li><label class="custom-checkbox"><input type="checkbox"> <span class="checkmark"></span>¾ tsp baking powder
+                </label></li>
+                <li><label class="custom-checkbox"><input type="checkbox"> <span class="checkmark"></span> 1 ½ tsp all purpose flour
+                </label></li>
+                <li><label class="custom-checkbox"><input type="checkbox"> <span class="checkmark"></span> 2 tsp vegetable oil
+
+                </label></li>
+                <li><label class="custom-checkbox"><input type="checkbox"> <span class="checkmark"></span>1 beaten egg </label></li>
+
+
+            </ul>
+        </div>
+        <div class="method">
+            <h2>Method</h2>
+            <ol>
+                <li class="bg-black">Milk mixture:Combine the first four ingredients in a wide bottomed pan and bring to a boil.
+                </li>
+                <li class="bg-black">Turn the heat down, and mix well, ensuring the sugar is dissolved.</li>
+                <li class="bg-black">Once the sugar dissolves turn the heat low to maintain the gentlest simmer.
+                </li>
+                <li class="bg-black">Add the slivered pistachios.</li>
+                <li class="bg-black">Rasmalai Dough:Mix the milk powder, flour, and baking powder well, followed by the oil and then the egg. This works best by hand.
+                </li>
+                <li class="bg-black">A quick knead will give you a dough that's firm enough to shape into balls.
+                </li>
+                <li class="bg-black">Work quickly and make 10-12 1 10 1 ¼ inch balls - make sure each dough ball is very smooth, add it to the milk immediately and then make the next one.
+
+                    
+                    </li>
+                <li class="bg-black">Once all your dough balls are made and in the pan on that gentlest of gentle simmers, cover the pan and let them cook undisturbed for 5 minutes.
+                </li>
+                <li class="bg-black">After 5 minutes, carefully flip each ras malai, and then continue cooking for another 5 minutes and then turn the stove off and let them cool before transferring them to a box/dish.
+                </li>
+                <li class="bg-black">Leave in the fridge for at least 4 hours or overnight for best results, garnish with additional pistachios and serve.
+
+                </li>
+               
+                
+            </ol>
+        </div>
+    </section>
+    <footer>
+        <div class="footer-container">
+          <div class="footer-links">
+            <a href="#home">Home</a>
+            <a href="#breakfast">Breakfast</a>
+            <a href="#lunch">Lunch</a>
+            <a href="#dinner">Dinner</a>
+            <a href="#desserts">Desserts</a>
+            <a href="#contact">Contact Us</a>
+          </div>
+      
+          <div class="newsletter">
+            <p>Subscribe to our newsletter for the latest recipes!</p>
+            <form onsubmit="showThankYou(event)">
+              <input type="email" placeholder="Enter your email" required>
+              <button type="submit">Subscribe</button>
+            </form>
+            <p id="thank-you-message" style="display: none; color: green;">Thank you for subscribing!</p>
+          </div>
+      
+          <p>&copy; 2024 Your Recipe Website. All Rights Reserved.</p>
+          <button class="back-to-top" onclick="scrollToTop()">Back to Top</button>
+        </div>
+      </footer>
+      
+<script src="scripts/main.js"></script>
+<script src="scripts/bfrecipe1.js"></script>
+<script src="scripts/footer.js"></script>
+
+</body>
+</html>

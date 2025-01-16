@@ -7,6 +7,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Cooking Recipe Website</title>
    <link rel="stylesheet" href="styles/main.css">
+   <link rel="stylesheet" href="styles/about.css">
+   <link rel="stylesheet" href="styles/footer.css">
    
    
   
@@ -26,13 +28,74 @@
             <ul class="nav-links">
              
                 <li><a href="all-recipes.html">Recipes</a></li>
-                <li><a href="favourites.html">Favourites</a></li>
+                <li><a href="instantpot.html">Quick & Easy</a></li>
                 <li><a href="contact.html">Contact</a></li>
                 <li><a href="about.html">About us</a></li>
             </ul>
         </nav>
 
     </header>
+    <main class="about-page">
+        <div class="aboutpicture">
+        <img src="images/quick&easy/aboutimg.jpeg" class="aboutpicture">
+        </div>
+        <div class="abouttext">
+        <h1>What makes us different to other recipe sites?</h1>
+        </div>
+        
+        <section class="about-intro">
+            <h1>Welcome to Recipe Hub</h1>
+            <p>Your ultimate destination for quick, easy, and delicious recipes for every occasion.</p>
+        </section>
+
+        <section class="mission">
+            <h2>Our Mission</h2>
+            <p>At Recipe Hub, we aim to make cooking enjoyable and accessible for everyone.<br> Whether you're a beginner or a seasoned chef, we've got recipes to inspire you.</p>
+        </section>
+
+
+
+        <section class="values">
+            <h2>What We Value</h2>
+            <ul>
+                <li>Quality Ingredients</li>
+                <li>Simple Techniques</li>
+                <li>Diverse Cuisines</li>
+                <li>Community Engagement</li>
+            </ul>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer-container">
+          <div class="footer-links">
+            <a href="#home">Home</a>
+            <a href="#breakfast">Breakfast</a>
+            <a href="#lunch">Lunch</a>
+            <a href="#dinner">Dinner</a>
+            <a href="#desserts">Desserts</a>
+            <a href="#contact">Contact Us</a>
+          </div>
+      
+          <div class="newsletter">
+            <p>Subscribe to our newsletter for the latest recipes!</p>
+            <form onsubmit="showThankYou(event)">
+              <input type="email" placeholder="Enter your email" required>
+              <button type="submit">Subscribe</button>
+            </form>
+            <p id="thank-you-message" style="display: none; color: green;">Thank you for subscribing!</p>
+          </div>
+      
+          <p>&copy; 2024 Your Recipe Website. All Rights Reserved.</p>
+          <button class="back-to-top" onclick="scrollToTop()">Back to Top</button>
+        </div>
+      </footer>
+      
+<script src="scripts/main.js"></script>
+<script src="scripts/bfrecipe1.js"></script>
+<script src="scripts/contact.js"></script>
+<script src="scripts/footer.js"></script>
+
     </body>
     </html>
 

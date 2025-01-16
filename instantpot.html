@@ -5,6 +5,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Cooking Recipe Website</title>
    <link rel="stylesheet" href="styles/main.css">
+   <link rel="stylesheet" href="styles/instantpot.css">
+   <link rel="stylesheet" href="styles/modal.css">
+   <link rel="stylesheet" href="styles/footer.css">
   </head>
 <body>
     <header class="navbar">
@@ -20,19 +23,143 @@
             <ul class="nav-links">
              
                 <li><a href="all-recipes.html">Recipes</a></li>
-                <li><a href="favourites.html">Favourites</a></li>
+                <li><a href="instantpot.html">Quick & Easy</a></li>
                 <li><a href="contact.html">Contact</a></li>
                 <li><a href="about.html">About us</a></li>
             </ul>
         </nav>
 
     </header>
-    <!-- Favorites Section -->
-  <div id="favorites-page">
-    <h2>Your Favorites</h2>
-    <div id="favorites-list"></div>
-  </div>
+    <section class="instant-hero">
+      <h1>Quick & Easy Recipes for Every Occasion!</h1>
+      <p>Delicious meals in no time. Perfect for busy days.</p>
+      <div class="hero-buttons">
+          
+          <a href="all-recipes.html" id="quickhero">Browse Recipes</a>
+          <button onclick="openModal()">Add Your Favorite Recipe</button>
 
-    <script src="scripts/favourites.js"></script>
-    </body>
-    </html>
+      </div>
+    </section>
+    <!-- Modal Container -->
+<div id="addRecipeModal" class="modal">
+  <div class="modal-content">
+      <span class="close-button" onclick="closeModal()">&times;</span>
+      <h2>Add Your Favorite Recipe</h2>
+      <form id="addRecipeForm" onsubmit="submitRecipe(event)">
+          <label for="recipeName">Recipe Name:</label>
+          <input type="text" id="recipeName" name="recipeName" required>
+          
+          <label for="recipeIngredients">Ingredients:</label>
+          <textarea id="recipeIngredients" name="recipeIngredients" required></textarea>
+          
+          <label for="recipeInstructions">Instructions:</label>
+          <textarea id="recipeInstructions" name="recipeInstructions" required></textarea>
+          
+          <button type="submit">Submit Recipe</button>
+      </form>
+  </div>
+</div>
+
+     <!-- Recipe Categories Section -->
+     <section class="categories">
+      <h2>Welcome to Chaat Adda</h2>
+      <div class="category-grid">
+          <div class="category-card">
+            <a href="quick1.html">
+              <img src="images/quick&easy/Peanut-Chaat.jpeg" alt="peanut masala">
+              <p> Peanut Masala  Chaat </p>
+              </a>
+          </div>
+          <div class="category-card">
+            <a href="quick2.html">
+              <img src="images/quick&easy/Kurkure-Bhel-.jpeg" alt="kurkure chaat">
+              <p>Kurkure Chaat</p>
+              </a>
+          </div>
+          <div class="category-card">
+            <a href="quick3.html">
+              <img src="images/quick&easy/Corn-Chaat-.jpeg" alt="corn chaat">
+              <p> Indian Style Corn Chaat</p>
+              </a>
+          </div>
+          <div class="category-card">
+            <a href="quick4.html">
+              <img src="images/quick&easy/nacho-salad-.jpeg" alt="nacho">
+              <p>Nacho Chaat</p>
+              </a>
+          </div>
+          <div class="category-card">
+            <a href="quick5.html">
+              <img src="images/quick&easy/aloo-chaat-.webp" alt="Aloo chaat">
+              <p>Aloo Chaat</p>
+              </a>
+          </div>
+      </div>
+  </section>
+
+  <!-- Featured Recipes Section -->
+  <section class="featured">
+      <h2>Your One-Stop for Quick & Easy Drinks</h2>
+      <div class="carousel">
+          <div class="quickeasy-card">
+
+              <img src="images/quick&easy/blueberry.webp" alt="drink">
+              <h3>Blueberry , Cranberry & Mint Crush</h3>
+              
+              <a href="drink1.html" class="drink-btn">View Recipe</a>
+          </div>
+          <div class="quickeasy-card">
+              <img src="images/quick&easy/citrus.webp" alt="drink">
+              <h3>Citrus & Cranberry Refresher</h3>
+<a href="drink2.html" class="drink-btn">View Recipe</a>
+              
+          </div>
+          <div class="quickeasy-card">
+            <img src="images/quick&easy/lime cooler.webp" alt="drink">
+            <h3>Cucumber And Lime Cooler Drink </h3>
+
+           
+            <a href="drink3.html" class="drink-btn">View Recipe</a>
+        </div>
+      </div>
+  </section>
+
+  <!-- Call-to-Action Section -->
+  <section class="cta">
+      <h2>Got a Recipe to Share?</h2>
+      <p>We'd love to feature your quick and easy recipe ideas!</p>
+      <button onclick="openModal()">Submit Your Recipe</button>
+  </section>
+
+    <footer>
+      <div class="footer-container">
+        <div class="footer-links">
+          <a href="#home">Home</a>
+          <a href="#breakfast">Breakfast</a>
+          <a href="#lunch">Lunch</a>
+          <a href="#dinner">Dinner</a>
+          <a href="#desserts">Desserts</a>
+          <a href="#contact">Contact Us</a>
+        </div>
+    
+        <div class="newsletter">
+          <p>Subscribe to our newsletter for the latest recipes!</p>
+          <form onsubmit="showThankYou(event)">
+            <input type="email" placeholder="Enter your email" required>
+            <button type="submit">Subscribe</button>
+          </form>
+          <p id="thank-you-message" style="display: none; color: green;">Thank you for subscribing!</p>
+        </div>
+    
+        <p>&copy; 2024 Your Recipe Website. All Rights Reserved.</p>
+        <button class="back-to-top" onclick="scrollToTop()">Back to Top</button>
+      </div>
+    </footer>
+    
+<script src="scripts/main.js"></script>
+<script src="scripts/bfrecipe1.js"></script>
+<script src="scripts/modal.js"></script>
+<script src="scripts/footer.js"></script>
+
+</body>
+</html>

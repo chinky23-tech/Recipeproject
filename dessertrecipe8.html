@@ -1,0 +1,202 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cooking Recipe Website</title>
+   <link rel="stylesheet" href="styles/main.css">
+ <link rel="stylesheet" href="styles/dessertrecipe8.css">
+   <link rel="stylesheet" href="styles/footer.css">
+
+
+</head>
+<body>
+    <header class="navbar">
+        <div class="logo">
+            <a href="index.html">Recipe Hub</a>
+        </div>
+        <div class="hamburger" onclick="toggleMenu()">
+            <span></span>
+            <span></span>
+            <span></span>
+          </div>
+        <nav>
+            <ul class="nav-links">
+             
+                <li><a href="all-recipes.html">Recipes</a></li>
+                <li><a href="InstantPot.html">Quick & Easy</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="about.html">About us</a></li>
+            </ul>
+        </nav>
+
+    </header>
+    <section id="hero2">
+        <div class="hero2-recipe">
+            <img src="images/desserts/Malpua.jpg" alt="sandwich" class="recipe2">
+        
+        <div class="hero2-text">
+            <h1>Crispy outside,savory inside— Malpua, a bite of flavor</h1>
+        </div>
+        </div>
+    </section>
+
+        <!-- Recipe Details -->
+        <section class="recipe-details">
+            <div class="info">
+                <p><strong>Cuisine:</strong> North India</p>
+                <p><strong>Prep Time:</strong>  40 mins</p>
+                <p><strong>Cook Time:</strong>  20 mins</p>
+                <p><strong>Total Time:</strong>  60 mins</p>
+                <p id="text">Flavors Folded to Perfection – Malpua Delight.</p>
+            </div>
+            
+        </section>
+    
+      
+    <section class="button-section">
+        <button id="reviewBtn">Review</button>
+        <button id="printBtn">Print</button>
+        <button id="saveBtn">Save</button>
+    </section>
+    
+<!-- Modal Popup for Review -->
+<div id="reviewModal" class="modal" style="display: none;">
+    <div class="modal-content">
+        <textarea id="reviewText" placeholder="Write your review..."></textarea>
+        <button id="submitReview">Submit</button>
+        <button id="closeModal">Close</button>
+    </div>
+</div>
+
+
+    <!-- Ingredients and Method -->
+    <section class="ingredients-method">
+        <div class="ingredients">
+            <h2>Ingredients</h2>
+            <ul>
+                <li>
+                    <label class="custom-checkbox">
+                        <input type="checkbox">
+                        <span class="checkmark"></span>
+                        1 cup maida / plain flour
+
+                    </label>
+                </li>
+    
+                
+                <li>
+                    <label class="custom-checkbox">
+                        <input type="checkbox"> <span class="checkmark"></span>½ cup rava </label>
+                    </li>
+                <li>
+                    <label class="custom-checkbox">
+                        <input type="checkbox">
+                         <span class="checkmark"></span>
+                       
+                         ¼ cup sugar
+
+                        </label>
+                    </li>
+                <li>
+                    <label class="custom-checkbox">
+                        <input type="checkbox"> 
+                        <span class="checkmark"></span> 
+                        
+                        ½ tsp fennel
+                    </label>
+                </li>
+                <li><label class="custom-checkbox"><input type="checkbox"> <span class="checkmark"></span>¼ tsp cardamom powder 
+
+                </label></li>
+                <li><label class="custom-checkbox"><input type="checkbox"> <span class="checkmark"></span>½ cup milk / rabri</label></li>
+                <li><label class="custom-checkbox"><input type="checkbox"> <span class="checkmark"></span> water as required,to prepare batter</label></li>
+                <li><label class="custom-checkbox"><input type="checkbox"> <span class="checkmark"></span>oil for deep frying</label></li>
+                <li><label class="custom-checkbox"><input type="checkbox"> <span class="checkmark"></span>rabri for serving
+                </label></li>
+                <li><label class="custom-checkbox"><input type="checkbox"> <span class="checkmark"></span> dry fruits for garnishing
+
+
+                </label></li>
+                <li><label class="custom-checkbox"><input type="checkbox"> <span class="checkmark"></span> For sugar syrup:</label></li>
+                <li><label class="custom-checkbox"><input type="checkbox">  <span class="checkmark"></span>1 cup sugar </label></li>
+
+                <li><label class="custom-checkbox"><input type="checkbox">  <span class="checkmark"></span> ½ cup water</label></li>
+                <li><label class="custom-checkbox"><input type="checkbox">  <span class="checkmark"></span> ¼ tsp cardamom powder</label></li>
+                <li><label class="custom-checkbox"><input type="checkbox">  <span class="checkmark"></span>few threads saffron </label></li>
+            </ul>
+        </div>
+        <div class="method">
+            <h2>Method</h2>
+            <ol>
+                <li class="bg-black">Firstly, in a large mixing bowl take maida, rava and sugar.
+                </li>
+                <li class="bg-black">Also add fennel powder and cardamom powder.
+                </li>
+                <li class="bg-black">Further add milk or rabri.</li>
+                <li class="bg-black">Mix well making sure there are no lumps in the batter.</li>
+                <li class="bg-black">Add water as required and mix well.
+                </li>
+                <li class="bg-black">Make sure the batter is of smooth poring consistency.
+                </li>
+                <li class="bg-black">Further whisk the batter for atleast 5 minutes.
+
+                    
+                    </li>
+                <li class="bg-black">Cover and rest the batter for 30 minutes.
+                </li>
+                <li class="bg-black">Pour the batter into hot oil / ghee.
+                </li>
+                <li class="bg-black">Once the malpua starts to float, splash oil over malpuas.
+
+                </li>
+                <li class="bg-black">And also press gently with the help of perforated spoon.
+
+                </li>
+               <li class="bg-black">The malpuas will puff up like poori.
+            </li>
+                <li class="bg-black">Now fry both sides till they turn golden brown.</li>
+                <li class="bg-black">Drain the malpuas onto the a kitchen towel to remove excess oil
+                </li>
+                <li class="bg-black">Now soak the malpuas into hot sugar syrup.
+                </li>
+                <li class="bg-black">Rest for 10 minutes making sure both the sides of malpua are soaked well.
+                </li>
+                <li class="bg-black">Finally, serve malpuas hot with rabri and garnished with few nuts.
+                </li>
+                
+            </ol>
+        </div>
+    </section>
+    <footer>
+        <div class="footer-container">
+          <div class="footer-links">
+            <a href="#home">Home</a>
+            <a href="#breakfast">Breakfast</a>
+            <a href="#lunch">Lunch</a>
+            <a href="#dinner">Dinner</a>
+            <a href="#desserts">Desserts</a>
+            <a href="#contact">Contact Us</a>
+          </div>
+      
+          <div class="newsletter">
+            <p>Subscribe to our newsletter for the latest recipes!</p>
+            <form onsubmit="showThankYou(event)">
+              <input type="email" placeholder="Enter your email" required>
+              <button type="submit">Subscribe</button>
+            </form>
+            <p id="thank-you-message" style="display: none; color: green;">Thank you for subscribing!</p>
+          </div>
+      
+          <p>&copy; 2024 Your Recipe Website. All Rights Reserved.</p>
+          <button class="back-to-top" onclick="scrollToTop()">Back to Top</button>
+        </div>
+      </footer>
+      
+<script src="scripts/main.js"></script>
+<script src="scripts/bfrecipe1.js"></script>
+<script src="scripts/footer.js"></script>
+
+</body>
+</html>

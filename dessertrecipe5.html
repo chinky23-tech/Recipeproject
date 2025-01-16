@@ -1,0 +1,190 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cooking Recipe Website</title>
+   <link rel="stylesheet" href="styles/main.css">
+ <link rel="stylesheet" href="styles/dessertrecipe5.css">
+   <link rel="stylesheet" href="styles/footer.css">
+
+
+</head>
+<body>
+    <header class="navbar">
+        <div class="logo">
+            <a href="index.html">Recipe Hub</a>
+        </div>
+        <div class="hamburger" onclick="toggleMenu()">
+            <span></span>
+            <span></span>
+            <span></span>
+          </div>
+        <nav>
+            <ul class="nav-links">
+             
+                <li><a href="all-recipes.html">Recipes</a></li>
+                <li><a href="InstantPot.html">Quick & Easy</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="about.html">About us</a></li>
+            </ul>
+        </nav>
+
+    </header>
+    <section id="hero2">
+        <div class="hero2-recipe">
+            <img src="images/desserts/jalebi.jpg" alt="sandwich" class="recipe2">
+        
+        <div class="hero2-text">
+            <h1>Crispy outside,savory inside—Jalebi , a bite of flavor</h1>
+        </div>
+        </div>
+    </section>
+
+        <!-- Recipe Details -->
+        <section class="recipe-details">
+            <div class="info">
+                <p><strong>Cuisine:</strong> North India</p>
+                <p><strong>Prep Time:</strong>  10 mins</p>
+                <p><strong>Cook Time:</strong>  30 mins</p>
+                <p><strong>Total Time:</strong>  40 mins</p>
+                <p id="text">Flavors Folded to Perfection – Jalebi Delight.</p>
+            </div>
+            
+        </section>
+    
+      
+    <section class="button-section">
+        <button id="reviewBtn">Review</button>
+        <button id="printBtn">Print</button>
+        <button id="saveBtn">Save</button>
+    </section>
+    
+<!-- Modal Popup for Review -->
+<div id="reviewModal" class="modal" style="display: none;">
+    <div class="modal-content">
+        <textarea id="reviewText" placeholder="Write your review..."></textarea>
+        <button id="submitReview">Submit</button>
+        <button id="closeModal">Close</button>
+    </div>
+</div>
+
+
+    <!-- Ingredients and Method -->
+    <section class="ingredients-method">
+        <div class="ingredients">
+            <h2>Ingredients</h2>
+            <ul>
+                <li>
+                    <label class="custom-checkbox">
+                        <input type="checkbox">
+                        <span class="checkmark"></span>
+                        
+                        1 cup All purpose flour
+                    </label>
+                </li>
+    
+                
+                <li>
+                    <label class="custom-checkbox">
+                        <input type="checkbox"> <span class="checkmark"></span>2 tbsp Corn Flour </label>
+                    </li>
+                <li>
+                    <label class="custom-checkbox">
+                        <input type="checkbox">
+                         <span class="checkmark"></span>
+                         ¾ cup Thick Curd approximately
+
+                        </label>
+                    </li>
+                <li>
+                    <label class="custom-checkbox">
+                        <input type="checkbox"> 
+                        <span class="checkmark"></span> 
+                        1 pinch Cooking soda 
+                      
+                    </label>
+                </li>
+                <li><label class="custom-checkbox"><input type="checkbox"> <span class="checkmark"></span> 2 tbsp Ghee
+
+
+                </label></li>
+                <li><label class="custom-checkbox"><input type="checkbox"> <span class="checkmark"></span>½ pinch Yellow food colour</label></li>
+                <li><label class="custom-checkbox"><input type="checkbox"> <span class="checkmark"></span>Oil + ghee - for deep frying </label></li>
+                <li><label class="custom-checkbox"><input type="checkbox"> <span class="checkmark"></span>For sugar syrup:</label></li>
+                <li><label class="custom-checkbox"><input type="checkbox"> <span class="checkmark"></span>1 cup Sugar </label></li>
+                <li><label class="custom-checkbox"><input type="checkbox"> <span class="checkmark"></span> 1 cup Water
+
+
+                </label></li>
+                <li><label class="custom-checkbox"><input type="checkbox"> <span class="checkmark"></span>1 tsp Lemon juice
+                </label></li>
+                <li><label class="custom-checkbox"><input type="checkbox">  <span class="checkmark"></span>¼ pinch Yellow food colour </label></li>
+                <li><label class="custom-checkbox"><input type="checkbox">  <span class="checkmark"></span> Rose essence or cardamom powder</label></li>
+            </ul>
+        </div>
+        <div class="method">
+            <h2>Method</h2>
+            <ol>
+                <li class="bg-black">Mix maida, corn flour, cooking soda, ghee and yellow food colour in a bowl.</li>
+                <li class="bg-black">Add curd and make a thick batter by adding water carefully.
+                </li>
+                <li class="bg-black">Consistency should be like thick vada batter. Keep it in a warm place for 12 hours/ overnight or until it ferments well.
+                </li>
+                <li class="bg-black">Next day mix well with a ladle. It should be a sticky thick batter of dropping consistency.
+                </li>
+                <li class="bg-black">In another stove, boil sugar with water,food colour, until one string consistency. Say 15 minutes in medium high flame.
+                </li>
+                <li class="bg-black">Then add lemon juice, essence/elachi,saffron and keep in lowest heat possible.</li>
+                <li class="bg-black">In a flat bottomed pan, heat oil + ghee. Level should be very low as shown in the pic.
+
+                    
+                    </li>
+                <li class="bg-black">Take a cloth with a smallest hole in the middle or a durable Ziploc bag with hole in the middle.</li>
+                <li class="bg-black">Fill with the batter and draw circles in a medium heated oil. oil should never fume. Also  it should be enough to fry the jalebis porous and crisp. So adjust the heat accordingly.
+                </li>
+                <li class="bg-black">Make 3-4 circles per piece and end the circle by overlapping the tip when you end, otherwise the shape won't be good.
+
+                </li>
+                <li class="bg-black">Fry on both sides till crisp and drain it and add immediately to the hot sugar syrup.
+
+                </li>
+               <li class="bg-black">Let it be dunked in the syrup for 2 minutes at least. After some time, drain it and arrange in a plate.
+            </li>
+                
+                
+            </ol>
+        </div>
+    </section>
+    <footer>
+        <div class="footer-container">
+          <div class="footer-links">
+            <a href="#home">Home</a>
+            <a href="#breakfast">Breakfast</a>
+            <a href="#lunch">Lunch</a>
+            <a href="#dinner">Dinner</a>
+            <a href="#desserts">Desserts</a>
+            <a href="#contact">Contact Us</a>
+          </div>
+      
+          <div class="newsletter">
+            <p>Subscribe to our newsletter for the latest recipes!</p>
+            <form onsubmit="showThankYou(event)">
+              <input type="email" placeholder="Enter your email" required>
+              <button type="submit">Subscribe</button>
+            </form>
+            <p id="thank-you-message" style="display: none; color: green;">Thank you for subscribing!</p>
+          </div>
+      
+          <p>&copy; 2024 Your Recipe Website. All Rights Reserved.</p>
+          <button class="back-to-top" onclick="scrollToTop()">Back to Top</button>
+        </div>
+      </footer>
+      
+<script src="scripts/main.js"></script>
+<script src="scripts/bfrecipe1.js"></script>
+<script src="scripts/footer.js"></script>
+
+</body>
+</html>

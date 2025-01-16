@@ -1,0 +1,191 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cooking Recipe Website</title>
+   <link rel="stylesheet" href="styles/main.css">
+ <link rel="stylesheet" href="styles/dessertrecipe2.css">
+   <link rel="stylesheet" href="styles/footer.css">
+
+
+</head>
+<body>
+    <header class="navbar">
+        <div class="logo">
+            <a href="index.html">Recipe Hub</a>
+        </div>
+        <div class="hamburger" onclick="toggleMenu()">
+            <span></span>
+            <span></span>
+            <span></span>
+          </div>
+        <nav>
+            <ul class="nav-links">
+             
+                <li><a href="all-recipes.html">Recipes</a></li>
+                <li><a href="InstantPot.html">Quick & Easy</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="about.html">About us</a></li>
+            </ul>
+        </nav>
+
+    </header>
+    <section id="hero2">
+        <div class="hero2-recipe">
+            <img src="images/desserts/falooda-photo.webp" alt="sandwich" class="recipe2">
+        
+        <div class="hero2-text">
+            <h1>Nothing beats the taste of homemade Falooda</h1>
+        </div>
+        </div>
+    </section>
+
+        <!-- Recipe Details -->
+        <section class="recipe-details">
+            <div class="info">
+                <p><strong>Cuisine:</strong> North India</p>
+                <p><strong>Prep Time:</strong>  30 mins</p>
+                <p><strong>Cook Time:</strong>  15 mins</p>
+                <p><strong>Total Time:</strong>  45 mins</p>
+                <p id="text">Flavors Folded to Perfection – Falooda Delight.</p>
+            </div>
+            
+        </section>
+    
+      
+    <section class="button-section">
+        <button id="reviewBtn">Review</button>
+        <button id="printBtn">Print</button>
+        <button id="saveBtn">Save</button>
+    </section>
+    
+<!-- Modal Popup for Review -->
+<div id="reviewModal" class="modal" style="display: none;">
+    <div class="modal-content">
+        <textarea id="reviewText" placeholder="Write your review..."></textarea>
+        <button id="submitReview">Submit</button>
+        <button id="closeModal">Close</button>
+    </div>
+</div>
+
+
+    <!-- Ingredients and Method -->
+    <section class="ingredients-method">
+        <div class="ingredients">
+            <h2>Ingredients</h2>
+            <ul>
+                <li>
+                    <label class="custom-checkbox">
+                        <input type="checkbox">
+                        <span class="checkmark"></span>
+                        
+                      For Soaking:
+
+                    </label>
+                </li>
+    
+                
+                <li>
+                    <label class="custom-checkbox">
+                        <input type="checkbox"> <span class="checkmark"></span>  ½ tbsp basil seeds </label>
+                    </li>
+                <li>
+                    <label class="custom-checkbox">
+                        <input type="checkbox">
+                         <span class="checkmark"></span>
+                         water as required
+
+                        </label>
+                    </li>
+                <li>
+                    <label class="custom-checkbox">
+                        <input type="checkbox"> 
+                        <span class="checkmark"></span> 
+                        
+                      5 tbsp flooda sev 
+                    </label>
+                </li>
+                <li><label class="custom-checkbox"><input type="checkbox"> <span class="checkmark"></span> 
+1.5 to 2 water
+                </label></li>
+                <li><label class="custom-checkbox"><input type="checkbox"> <span class="checkmark"></span>For making:</label></li>
+                <li><label class="custom-checkbox"><input type="checkbox"> <span class="checkmark"></span> 6 tbsp rose syrup</label></li>
+                <li><label class="custom-checkbox"><input type="checkbox"> <span class="checkmark"></span>6 tbsp  basil seeds</label></li>
+                <li><label class="custom-checkbox"><input type="checkbox"> <span class="checkmark"></span> 12 tbsp flooda sev</label></li>
+                <li><label class="custom-checkbox"><input type="checkbox"> <span class="checkmark"></span> 4 cups milk chilled
+
+                </label></li>
+                <li><label class="custom-checkbox"><input type="checkbox"> <span class="checkmark"></span> 4 scoops vanilla ice cream</label></li>
+                <li><label class="custom-checkbox"><input type="checkbox">  <span class="checkmark"></span> 10 to 12 pistachios -unsalted</label></li>
+<li><label class="custom-checkbox"><input type="checkbox"><span class="checkmark"></span>10 to 12 almonds</label></li>
+<li><label class="custom-checkbox"><input type="checkbox"><span class="checkmark"> </span>10 to 12 cashews</label></li>
+<li><label class="custom-checkbox"><input type="checkbox"><span class="checkmark"></span>10 to 12 raisins</label></li>
+            </ul>
+        </div>
+        <div class="method">
+            <h2>Method</h2>
+            <ol>
+                <li class="bg-black">Soak basil seeds in water for about 20 to 30 mins. Once they swell using a strainer drain the extra water and set the soaked seeds aside.
+                </li>
+                <li class="bg-black">Prepare the falooda sev</li>
+                <li class="bg-black">soaking the falooda sev in warm water. Or you can cook them in hot water until softened.
+                </li>
+                <li class="bg-black">Once cooked, using strainer or colander, drain the extra water. Then rinse the cooked falooda sev in fresh water. Drain the water again. Keep covered aside till they are cooled completely at room temperature. 
+                </li>
+                <li class="bg-black">Chop the nuts and set aside.
+                </li>
+                <li class="bg-black">In 4 tall glasses each, add 1.5 to 2 tablespoons rose syrup. Depending upon the sweetness preferred and the size of the glass add less or more of the rose syrup. 
+                </li>
+                <li class="bg-black">Then add 2 tablespoons soaked basil seeds. 
+
+                    
+                    </li>
+                <li class="bg-black">Add 2 to 3 tablespoons of the faluda sev.
+                </li>
+                <li class="bg-black">In a slow stream, pour about 1 cup milk.
+                </li>
+                <li class="bg-black">Then top with one scoop of vanilla ice cream.
+
+                </li>
+                <li class="bg-black">Garnish with a few raisins, sliced pistachios, almonds or cashews. For a bright pop of color, you can decorate with a few glazed cherries or tutti-frutti.
+                </li>
+               <li class="bg-black">Serve the falooda straight away. While drinking, with a spoon mix the rose syrup settled at the bottom with the milk and then drink as you eat the flooda sev , basil seeds and nuts.
+            </li>
+                
+                
+            </ol>
+        </div>
+    </section>
+    <footer>
+        <div class="footer-container">
+          <div class="footer-links">
+            <a href="#home">Home</a>
+            <a href="#breakfast">Breakfast</a>
+            <a href="#lunch">Lunch</a>
+            <a href="#dinner">Dinner</a>
+            <a href="#desserts">Desserts</a>
+            <a href="#contact">Contact Us</a>
+          </div>
+      
+          <div class="newsletter">
+            <p>Subscribe to our newsletter for the latest recipes!</p>
+            <form onsubmit="showThankYou(event)">
+              <input type="email" placeholder="Enter your email" required>
+              <button type="submit">Subscribe</button>
+            </form>
+            <p id="thank-you-message" style="display: none; color: green;">Thank you for subscribing!</p>
+          </div>
+      
+          <p>&copy; 2024 Your Recipe Website. All Rights Reserved.</p>
+          <button class="back-to-top" onclick="scrollToTop()">Back to Top</button>
+        </div>
+      </footer>
+      
+<script src="scripts/main.js"></script>
+<script src="scripts/bfrecipe1.js"></script>
+<script src="scripts/footer.js"></script>
+
+</body>
+</html>

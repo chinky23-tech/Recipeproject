@@ -1,0 +1,189 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cooking Recipe Website</title>
+   <link rel="stylesheet" href="styles/main.css">
+ <link rel="stylesheet" href="styles/dessertspl.css">
+   <link rel="stylesheet" href="styles/footer.css">
+
+
+</head>
+<body>
+    <header class="navbar">
+        <div class="logo">
+            <a href="index.html">Recipe Hub</a>
+        </div>
+        <div class="hamburger" onclick="toggleMenu()">
+            <span></span>
+            <span></span>
+            <span></span>
+          </div>
+        <nav>
+            <ul class="nav-links">
+             
+                <li><a href="all-recipes.html">Recipes</a></li>
+                <li><a href="InstantPot.html">Quick & Easy</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="about.html">About us</a></li>
+            </ul>
+        </nav>
+
+    </header>
+    <section id="hero2">
+        <div class="hero2-recipe">
+            <img src="images/desserts/protien balls.jpeg" alt="sandwich" class="recipe2">
+        
+        <div class="hero2-text">
+            <h1>Nothing beats the taste of homemade Protien Bite</h1>
+        </div>
+        </div>
+    </section>
+
+        <!-- Recipe Details -->
+        <section class="recipe-details">
+            <div class="info">
+                <p><strong>Cuisine:</strong> North India</p>
+                <p><strong>Prep Time:</strong>  10 mins</p>
+                <p><strong>Cook Time:</strong>  30 mins</p>
+                <p><strong>Total Time:</strong>  40 mins</p>
+                <p id="text">Flavors Folded to Perfection – Protien Bite Delight.</p>
+            </div>
+            
+        </section>
+    
+      
+    <section class="button-section">
+        <button id="reviewBtn">Review</button>
+        <button id="printBtn">Print</button>
+        <button id="saveBtn">Save</button>
+    </section>
+    
+<!-- Modal Popup for Review -->
+<div id="reviewModal" class="modal" style="display: none;">
+    <div class="modal-content">
+        <textarea id="reviewText" placeholder="Write your review..."></textarea>
+        <button id="submitReview">Submit</button>
+        <button id="closeModal">Close</button>
+    </div>
+</div>
+
+
+    <!-- Ingredients and Method -->
+    <section class="ingredients-method">
+        <div class="ingredients">
+            <h2>Ingredients</h2>
+            <ul>
+                <li>
+                    <label class="custom-checkbox">
+                        <input type="checkbox">
+                        <span class="checkmark"></span>
+                        3 tbsp peanuts
+
+                    </label>
+                </li>
+    
+                
+                <li>
+                    <label class="custom-checkbox">
+                        <input type="checkbox"> <span class="checkmark"></span>1 cup sesame
+                    </label>
+                    </li>
+                <li>
+                    <label class="custom-checkbox">
+                        <input type="checkbox">
+                         <span class="checkmark"></span>
+                       
+                         ¾ cup flaxseeds
+                        </label>
+                    </li>
+                <li>
+                    <label class="custom-checkbox">
+                        <input type="checkbox"> 
+                        <span class="checkmark"></span> 
+                        300 grams dates
+                      
+                    </label>
+                </li>
+                <li><label class="custom-checkbox"><input type="checkbox"> <span class="checkmark"></span> ¾ cup almonds
+
+                </label></li>
+                <li><label class="custom-checkbox"><input type="checkbox"> <span class="checkmark"></span>2 tbsp pistachios, chopped
+                </label></li>
+                <li><label class="custom-checkbox"><input type="checkbox"> <span class="checkmark"></span> 2 tbsp pumpkin seeds</label></li>
+                <li><label class="custom-checkbox"><input type="checkbox"> <span class="checkmark"></span>2 tbsp sunflower seeds</label></li>
+                <li><label class="custom-checkbox"><input type="checkbox"> <span class="checkmark"></span>2 tbsp chia seeds
+                </label></li>
+                <li><label class="custom-checkbox"><input type="checkbox"> <span class="checkmark"></span> ½ tsp cardamom powder
+
+                </label></li>
+                
+            </ul>
+        </div>
+        <div class="method">
+            <h2>Method</h2>
+            <ol>
+                <li class="bg-black">Firstly, in a pan dry roast 3 tbsp peanuts until it turns crunchy.</li>
+                <li class="bg-black">Add 1 cup sesame and ¾ cup flaxseeds. continue to roast on low flame.</li>
+                <li class="bg-black">Roast until the seeds turn aromatic and starts to splutter.
+                </li>
+                <li class="bg-black">Cool completely, and transfer to the mixer jar.
+                </li>
+                <li class="bg-black">Grind to coarse powder. transfer the powder to a large bowl and keep it aside.
+                </li>
+                <li class="bg-black">In a mixer jar take 300 grams dates. make sure to take medjool dates as they are soft and easy to blend. if your dates are hard, then soak in warm water for 30 minutes.
+                </li>
+                <li class="bg-black">Grind to smooth paste and transfer to the bowl.
+
+                    
+                    </li>
+                <li class="bg-black">Crumble and mix the dates paste with the prepared powder.
+                </li>
+                <li class="bg-black">Further, in a pan take ¾ cup almonds, 2 tbsp pistachios, chopped, 2 tbsp pumpkin seeds, 2 tbsp sunflower seeds, and 2 tbsp chia seeds.
+                </li>
+                <li class="bg-black">Dry roast on low flame until the nuts turn crunchy.
+
+                </li>
+                <li class="bg-black">Transfer the roasted nuts to the bowl. also, add ½ tsp cardamom powder and mix well.
+
+                </li>
+               <li class="bg-black">Prepare a small ball-sized ladoo.</li>
+                <li class="bg-black">Finally, protein bites are ready to enjoy for a month when stored in an airtight container.
+                </li>
+                
+            </ol>
+        </div>
+    </section>
+    <footer>
+        <div class="footer-container">
+          <div class="footer-links">
+            <a href="#home">Home</a>
+            <a href="#breakfast">Breakfast</a>
+            <a href="#lunch">Lunch</a>
+            <a href="#dinner">Dinner</a>
+            <a href="#desserts">Desserts</a>
+            <a href="#contact">Contact Us</a>
+          </div>
+      
+          <div class="newsletter">
+            <p>Subscribe to our newsletter for the latest recipes!</p>
+            <form onsubmit="showThankYou(event)">
+              <input type="email" placeholder="Enter your email" required>
+              <button type="submit">Subscribe</button>
+            </form>
+            <p id="thank-you-message" style="display: none; color: green;">Thank you for subscribing!</p>
+          </div>
+      
+          <p>&copy; 2024 Your Recipe Website. All Rights Reserved.</p>
+          <button class="back-to-top" onclick="scrollToTop()">Back to Top</button>
+        </div>
+      </footer>
+      
+<script src="scripts/main.js"></script>
+<script src="scripts/bfrecipe1.js"></script>
+<script src="scripts/footer.js"></script>
+
+</body>
+</html>

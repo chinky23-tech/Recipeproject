@@ -1,0 +1,189 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cooking Recipe Website</title>
+   <link rel="stylesheet" href="styles/main.css">
+ <link rel="stylesheet" href="styles/dessertrecipe4.css">
+   <link rel="stylesheet" href="styles/footer.css">
+
+
+</head>
+<body>
+    <header class="navbar">
+        <div class="logo">
+            <a href="index.html">Recipe Hub</a>
+        </div>
+        <div class="hamburger" onclick="toggleMenu()">
+            <span></span>
+            <span></span>
+            <span></span>
+          </div>
+        <nav>
+            <ul class="nav-links">
+             
+                <li><a href="all-recipes.html">Recipes</a></li>
+                <li><a href="InstantPot.html">Quick & Easy</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="about.html">About us</a></li>
+            </ul>
+        </nav>
+
+    </header>
+    <section id="hero2">
+        <div class="hero2-recipe">
+            <img src="images/desserts/gulabjamun.jpg" alt="sandwich" class="recipe2">
+        
+        <div class="hero2-text">
+            <h1>Nothing beats the taste of homemade Gulab Jamun</h1>
+        </div>
+        </div>
+    </section>
+
+        <!-- Recipe Details -->
+        <section class="recipe-details">
+            <div class="info">
+                <p><strong>Cuisine:</strong> North India</p>
+                <p><strong>Prep Time:</strong>  20 mins</p>
+                <p><strong>Cook Time:</strong>  25 mins</p>
+                <p><strong>Total Time:</strong>  45 mins</p>
+                <p id="text">Flavors Folded to Perfection – Gulab Jamun Delight.</p>
+            </div>
+            
+        </section>
+    
+      
+    <section class="button-section">
+        <button id="reviewBtn">Review</button>
+        <button id="printBtn">Print</button>
+        <button id="saveBtn">Save</button>
+    </section>
+    
+<!-- Modal Popup for Review -->
+<div id="reviewModal" class="modal" style="display: none;">
+    <div class="modal-content">
+        <textarea id="reviewText" placeholder="Write your review..."></textarea>
+        <button id="submitReview">Submit</button>
+        <button id="closeModal">Close</button>
+    </div>
+</div>
+
+
+    <!-- Ingredients and Method -->
+    <section class="ingredients-method">
+        <div class="ingredients">
+            <h2>Ingredients</h2>
+            <ul>
+                <li>
+                    <label class="custom-checkbox">
+                        <input type="checkbox">
+                        <span class="checkmark"></span>
+                        1 cup milk powder (100g)
+
+                    </label>
+                </li>
+    
+                
+                <li>
+                    <label class="custom-checkbox">
+                        <input type="checkbox"> <span class="checkmark"></span>3 tbsp all purpose flour (~30g)
+                    </label>
+                    </li>
+                <li>
+                    <label class="custom-checkbox">
+                        <input type="checkbox">
+                         <span class="checkmark"></span>
+                         1 ½ tsp baking powder
+
+                        </label>
+                    </li>
+                <li>
+                    <label class="custom-checkbox">
+                        <input type="checkbox"> 
+                        <span class="checkmark"></span> 
+                        3 tbsp heavy cream (~40g)
+
+                      
+                    </label>
+                </li>
+                <li><label class="custom-checkbox"><input type="checkbox"> <span class="checkmark"></span> 2 tbsp melted ghee (30g)
+
+
+                </label></li>
+                <li><label class="custom-checkbox"><input type="checkbox"> <span class="checkmark"></span>1 ¼ cups water
+                </label></li>
+                <li><label class="custom-checkbox"><input type="checkbox"> <span class="checkmark"></span> 1 cup sugar</label></li>
+                <li><label class="custom-checkbox"><input type="checkbox"> <span class="checkmark"></span>1-2 cardamom pods
+                </label></li>
+                <li><label class="custom-checkbox"><input type="checkbox"> <span class="checkmark"></span>Optional: saffron and rose water
+                </label></li>
+     
+
+
+            </ul>
+        </div>
+        <div class="method">
+            <h2>Method</h2>
+            <ol>
+                <li class="bg-black">Mix the milk powder, flour and baking powder in a bowl</li>
+                <li class="bg-black">Separately whisk together the melted ghee,  and cream</li>
+                <li class="bg-black">Pour into the dry ingredients and use a spoon to bring together into a dough
+                </li>
+                <li class="bg-black">Lightly knead the dough for 1-2 minutes to make sure there are no lumps and refrigerate for 20 min
+                </li>
+                <li class="bg-black">Knead the dough again when it’s cooled to make sure it is smooth. Once it is smooth and binds together properly, stop kneading. If it feels too dry, add a tablespoon of milk and knead.
+                </li>
+                <li class="bg-black">Divide the dough into small balls</li>
+                <li class="bg-black">Heat up oil in a wok on medium heat
+                    
+                    </li>
+                <li class="bg-black">Separately, mix sugar, water and cardamom in a saucepan and bring to a boil. Simmer until the sugar dissolves, then turn off the heat and cover
+                </li>
+                <li class="bg-black">Once the oil is warm (but not too hot, test with a small piece of dough - it should rise to the surface slowly), gently transfer half of the balls into it
+                </li>
+                <li class="bg-black">Swirl your wok so the jamuns start to float and turn, then use a large strainer to gently swirl them as you fry them. Fry for about 4 min until they are evenly brown
+
+                </li>
+                <li class="bg-black">Transfer the gulab jamun to the saucepan with the hot syrup. Swirl them around to make sure they are well coated on all sides. Then cover and rest for at least 30 minutes to allow the gulab jamun to soak the syrup.
+
+                </li>
+               <li class="bg-black">Serve and enjoy!
+            </li>
+               
+                
+            </ol>
+        </div>
+    </section>
+    <footer>
+        <div class="footer-container">
+          <div class="footer-links">
+            <a href="#home">Home</a>
+            <a href="#breakfast">Breakfast</a>
+            <a href="#lunch">Lunch</a>
+            <a href="#dinner">Dinner</a>
+            <a href="#desserts">Desserts</a>
+            <a href="#contact">Contact Us</a>
+          </div>
+      
+          <div class="newsletter">
+            <p>Subscribe to our newsletter for the latest recipes!</p>
+            <form onsubmit="showThankYou(event)">
+              <input type="email" placeholder="Enter your email" required>
+              <button type="submit">Subscribe</button>
+            </form>
+            <p id="thank-you-message" style="display: none; color: green;">Thank you for subscribing!</p>
+          </div>
+      
+          <p>&copy; 2024 Your Recipe Website. All Rights Reserved.</p>
+          <button class="back-to-top" onclick="scrollToTop()">Back to Top</button>
+        </div>
+      </footer>
+      
+<script src="scripts/main.js"></script>
+<script src="scripts/bfrecipe1.js"></script>
+<script src="scripts/footer.js"></script>
+
+</body>
+</html>

@@ -1,4 +1,4 @@
-#search {
+/*#search {
     margin: 20px auto;
     text-align: center;
 }
@@ -15,4 +15,32 @@
     outline: none;
     border-color: #ff6347;
     box-shadow: 0 0 5px rgba(255, 99, 71, 0.5);
+}*/
+#search-form {
+    position: relative;
+    width: 80%;
+    margin: 0 auto;
+    margin-top: 20px;
 }
+
+#search-input {
+    width: 100%;
+    padding: 10px;
+    padding-right: 40px; /* Add space for the icon */
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    outline: none;
+}
+
+.search-icon {
+    position: absolute;
+    top: 50%;
+    right: 10px;
+    transform: translateY(-50%);
+    color: #888;
+    font-size: 20px;
+    cursor: pointer;
+    
+}
+

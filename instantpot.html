@@ -36,29 +36,15 @@
       <div class="hero-buttons">
           
           <a href="all-recipes.html" id="quickhero">Browse Recipes</a>
-          <button onclick="openModal()">Add Your Favorite Recipe</button>
+          
+
 
       </div>
     </section>
-    <!-- Modal Container -->
-<div id="addRecipeModal" class="modal">
-  <div class="modal-content">
-      <span class="close-button" onclick="closeModal()">&times;</span>
-      <h2>Add Your Favorite Recipe</h2>
-      <form id="addRecipeForm" onsubmit="submitRecipe(event)">
-          <label for="recipeName">Recipe Name:</label>
-          <input type="text" id="recipeName" name="recipeName" required>
-          
-          <label for="recipeIngredients">Ingredients:</label>
-          <textarea id="recipeIngredients" name="recipeIngredients" required></textarea>
-          
-          <label for="recipeInstructions">Instructions:</label>
-          <textarea id="recipeInstructions" name="recipeInstructions" required></textarea>
-          
-          <button type="submit">Submit Recipe</button>
-      </form>
-  </div>
-</div>
+   
+  
+
+
 
      <!-- Recipe Categories Section -->
      <section class="categories">
@@ -115,7 +101,7 @@
               
           </div>
           <div class="quickeasy-card">
-            <img src="images/quick&easy/lime cooler.webp" alt="drink">
+            <img src="images/quick&easy/limecooler.webp" alt="drink">
             <h3>Cucumber And Lime Cooler Drink </h3>
 
            
@@ -129,7 +115,27 @@
       <h2>Got a Recipe to Share?</h2>
       <p>We'd love to feature your quick and easy recipe ideas!</p>
       <button onclick="openModal()">Submit Your Recipe</button>
+      
   </section>
+<!-- Modal -->
+<div id="myModal" class="modal">
+  <div class="modal-content">
+    <span class="close-button" onclick="closeModal()">&times;</span>
+    
+    <form id="myForm" onsubmit="submitRecipe(event)">
+      <label for="recipeName">Recipe Name:</label>
+      <input type="text" id="recipeName" name="recipeName" required>
+      
+      <label for="recipeIngredients">Ingredients:</label>
+      <textarea id="recipeIngredients" name="recipeIngredients" required></textarea>
+      
+      <label for="recipeInstructions">Instructions:</label>
+      <textarea id="recipeInstructions" name="recipeInstructions" required></textarea>
+      
+      <button type="submit" class="submitbtn">Submit Recipe</button>
+    </form>
+  </div>
+</div>
 
     <footer>
       <div class="footer-container">
@@ -158,8 +164,9 @@
     
 <script src="scripts/main.js"></script>
 <script src="scripts/bfrecipe1.js"></script>
-<script src="scripts/modal.js"></script>
+<script src="scripts/modal.js" defer></script>
 <script src="scripts/footer.js"></script>
+
 
 </body>
 </html>

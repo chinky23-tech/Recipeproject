@@ -21,6 +21,7 @@
 
         .hero-buttons button {
             padding: 10px 20px;
+            
             margin: 5px;
             border: none;
             border-radius: 5px;
@@ -28,7 +29,7 @@
             color: white;
             cursor: pointer;
             font-size: 1rem;
-            /*transition: background 0.3s;*/
+           
         }
 
         .hero-buttons button:hover {
@@ -36,6 +37,7 @@
         }
 #quickhero{
     padding: 10px 20px;
+   
             margin: 5px;
             border: none;
             border-radius: 5px;
@@ -154,7 +156,7 @@ a{
             border: none;
             border-radius: 5px;
             cursor: pointer;
-            transition: background 0.3s;
+            
         }
 
         .quickeasy-card button:hover {
@@ -187,9 +189,83 @@ a{
             border-radius: 5px;
             font-size: 1rem;
             cursor: pointer;
-            transition: background 0.3s;
+           
         }
 
         .cta button:hover {
             background: #f4f4f4;
         }
+
+        .modal {
+            display: none;
+            position: fixed;
+            z-index: 1000;
+            left: 0;
+            top: 0;
+           
+            width: 100%;
+            height: 100%;
+            overflow: auto;
+            background-color: rgba(0, 0, 0, 0.5); /* Black background with transparency */
+          }
+          
+          .modal-content {
+            background-color: #f7f7f7;
+            margin: 10% auto;
+            padding: 20px;
+            border: 1px solid #888;
+            width: 50%;
+            box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+            
+          }
+          
+          .close-button {
+            color: #aaa;
+            float: right;
+            font-size: 28px;
+            font-weight: bold;
+            cursor: pointer;
+          }
+          
+          .close-button:hover {
+            color: black;
+          }
+          #myForm{
+            color: black;
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+            text-align: left;
+          }
+
+
+          #myForm label {
+            font-weight: bold;
+            margin-bottom: 5px;
+        }
+        
+        #myForm input,
+        #myForm textarea {
+            padding: 10px;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            font-size: 16px;
+            width: 100%;
+        }
+        
+        #myForm textarea {
+            height: 100px;
+            resize: none;
+        }
+        
+          .submitbtn{
+            padding: 10px;
+            background-color: #ff7c5c;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            font-size: 1em;
+          }
+          .submitbtn:hover{
+            background: #ff4c2c;
+          }

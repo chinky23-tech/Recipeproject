@@ -4,14 +4,15 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Cooking Recipe Website</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
    <link rel="stylesheet" href="styles/main.css">
    <link rel="stylesheet" href="styles/hero.css">
    <link rel="stylesheet" href="styles/search.css">
-   <link rel="stylesheet" href="styles/filter.css">
    <link rel="stylesheet" href="styles/browse.css">
    <link rel="stylesheet" href="styles/recipesection.css">
    <link rel="stylesheet" href="styles/footer.css">
 
+  
 
 </head>
 <body>
@@ -48,23 +49,22 @@
     </section>
    
 
-     <!-- Search Section -->
-     <section id="search">
-        <input type="text" id="search-input" placeholder="Search recipes by name or ingredient">
-      
-    </section>
+     
+ 
 
-    <!-- Filter Section -->
-    <section id="filter">
-        <select id="category-filter">
-            <option value="all">All Categories</option>
-            <option value="breakfast">Breakfast</option>
-            <option value="lunch">Lunch</option>
-            <option value="Dinner">Dinner</option>
-            <option value="dessert">Dessert</option>
-        </select>
-    </section>
-    
+<form id="search-form">
+    <input 
+        type="text" 
+        id="search-input" 
+        placeholder="Search recipes by name" 
+        name="query"
+        required
+    >
+    <i class="fas fa-search search-icon" id="search-icon"></i>
+</form>
+
+
+   
  
     <!-- Recipes Section -->
     <section id="Breakfast-Recipes">
@@ -75,7 +75,7 @@
         <div class="recipe-cards">
         <div class="recipe-card">
             <a href="bfrecipe1.html">
-            <img src="images/breakfast/Gobi-Paratha.jpg" alt="Gobi Parantha">
+            <img src="images/breakfast/Gobi-Paratha.jpg" alt="Gobi Parantha" >
             <h4>Gobi Parantha</h4>
 
             <p>Bite into Goodness </p>
@@ -200,7 +200,7 @@
             </div>
             <div class="recipe-card">
                 <a href="lunchrecipe7.html">
-                <img src="images/lunch/dal-tadka.jpg" alt="dal-tadka">
+                <img src="images/lunch/tadka-dal.jpg" alt="dal-tadka">
                 <h4>Dal Tadka</h4>
 <p>The classic comfort food</p>
 </a>

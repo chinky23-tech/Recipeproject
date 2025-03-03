@@ -31,14 +31,14 @@ body {
     height: 100px;
 }
 .recipe2{
-    margin: 20px;
-    height: 440px;
-    width: 85%;
+    margin: 65px 50px 75px 50px;
+    height: 600px;
+    width: 80%;
     border-radius: 10px;
 }
 .hero2-text {
     position:relative;
-    top: -80%;
+    top: -60%;
     left:-100;
     transform: translate( 2%);
     
@@ -54,7 +54,7 @@ body {
     padding: 20px;
     background: #ffffff;
   box-shadow: 2px 2px 8px #1c1d22;
-    margin-top: 25em;
+    margin-top: 40em;
     border-radius: 15px;
     width: 100;
     font-size: 1.1em;

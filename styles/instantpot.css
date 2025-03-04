@@ -67,12 +67,12 @@ a{
 
         .category-grid {
             display: grid;
-           grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-       
-            gap: 10px;
+           grid-template-columns:   200px 200px 200px 200px 200px;
+          /* margin-left:7em;*/
+            gap: 20px;
             justify-items: center;
             max-width: 1200px;
-            margin: 0 auto;
+            margin:  0px 0px 0px 140px;
         }
 
         .category-card {
@@ -82,6 +82,7 @@ a{
             overflow: hidden;
             box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
             text-align: center;
+            width: 200px;
         }
 
         .category-card img {

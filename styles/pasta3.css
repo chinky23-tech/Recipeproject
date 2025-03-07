@@ -4,12 +4,11 @@
     margin:0;
     padding: 0;
     box-sizing: border-box;
-    font-family: Arial, Helvetica, sans-serif;
+    
 }
 body {
     font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
+
     background-color: #f8f8f8;
     color: #333;
 }
@@ -249,11 +248,11 @@ button:hover {
         width: 100%;
         height: auto;
         margin: 10px auto;
-        border-radius: 8px;
+       padding: 10px;
     }
 
     .hero2-text {
-        font-size: 14px;
+        font-size: 12px;
         top: -60%;
         transform: translate(0, 0);
         margin: 0;
@@ -337,8 +336,8 @@ button:hover {
     }
 
     .custom-checkbox .checkmark {
-        width: 12px;
-        height: 12px;
+        width: 15px;
+        height: 15px;
     }
 
     /* Method Styling */

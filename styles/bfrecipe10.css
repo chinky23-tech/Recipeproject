@@ -247,7 +247,8 @@ button:hover {
         width: 100%;
         height: auto;
         margin: 10px auto;
-        border-radius: 8px;
+        padding: 10px;
+        border-radius: 15px;
     }
 
     .hero2-text {

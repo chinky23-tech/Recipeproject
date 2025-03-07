@@ -14,6 +14,7 @@ footer {
   /* Links Section */
   .footer-links {
     margin-bottom: 20px;
+    font-size: 1.5em;
   }
   
   .footer-links a {
@@ -78,7 +79,7 @@ footer {
   }
   
   .back-to-top:hover {
-    background-color: #555;
+    background-color: #ff4500;
   }
   /* Media Query for Mobile Screens */
 @media (max-width: 600px) {

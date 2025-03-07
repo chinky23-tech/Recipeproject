@@ -247,9 +247,10 @@ button:hover {
 
     .recipe2 {
         width: 100%;
-        height: auto;
+        height: 300px;
         margin: 10px auto;
-        border-radius: 8px;
+        border-radius: 15px;
+        padding: 10px;
     }
 
     .hero2-text {

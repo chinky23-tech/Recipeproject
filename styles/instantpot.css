@@ -66,13 +66,13 @@ a{
         }
 
         .category-grid {
-            display: grid;
-           grid-template-columns:   200px 200px 200px 200px 200px;
-          /* margin-left:7em;*/
-            gap: 20px;
+            display: flex;
+          gap: 20px;
             justify-items: center;
             max-width: 1200px;
             margin:  0px 0px 0px 140px;
+           
+           
         }
 
         .category-card {
@@ -83,6 +83,8 @@ a{
             box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
             text-align: center;
             width: 200px;
+            
+            
         }
 
         .category-card img {
@@ -273,3 +275,42 @@ a{
           .submitbtn:hover{
             background: #ff4c2c;
           }
+          @media (min-width: 400px) {
+            .instant-hero h1 {
+                font-size: 2.5rem;
+            }
+        
+            .category-grid {
+                flex-wrap: wrap;
+                gap: 20px;
+                justify-content: center;
+                margin: 0 auto;
+            }
+        
+            .category-card {
+                width: 200px;
+            }
+            .carousel{
+                flex-wrap: wrap;
+            }
+        }
+        
+        /* For desktops and above (min-width: 992px) 
+        @media (min-width: 992px) {
+            .category-grid {
+                justify-content: space-between;
+            }
+        
+            .category-card {
+                width: 22%; /* More space between cards on larger screens 
+            }
+        
+            .quickeasy-card {
+                flex: 0 0 300px; /* Adjust width of quickeasy-card 
+            }
+        
+            .modal-content {
+                width: 40%; /* Reduce modal size on larger screens 
+            }
+        }
+        */

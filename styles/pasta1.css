@@ -251,11 +251,13 @@ button:hover {
         width: 100%;
         height: auto;
         margin: 10px auto;
-        border-radius: 8px;
+       
+        padding: 10px;
+
     }
 
     .hero2-text {
-        font-size: 14px;
+        font-size: 12px;
         top: -60%;
         transform: translate(0, 0);
         margin: 0;
@@ -339,8 +341,8 @@ button:hover {
     }
 
     .custom-checkbox .checkmark {
-        width: 12px;
-        height: 12px;
+        width: 15px;
+        height: 15px;
     }
 
     /* Method Styling */
